@@ -55,6 +55,12 @@
     <Compile Include="frmAgregarCliente.Designer.cs">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAgregarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAgregarLibros.Designer.cs">
+      <DependentUpon>FrmAgregarLibros.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,16 +73,28 @@
     <Compile Include="frmMostrarClientes.Designer.cs">
       <DependentUpon>frmMostrarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMostrarLibros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMostrarLibros.Designer.cs">
+      <DependentUpon>FrmMostrarLibros.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAgregarLibros.resx">
+      <DependentUpon>FrmAgregarLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarClientes.resx">
       <DependentUpon>frmMostrarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMostrarLibros.resx">
+      <DependentUpon>FrmMostrarLibros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +104,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -110,6 +129,9 @@
       <Project>{88b2f789-be9d-40ee-854a-4260c5d837ff}</Project>
       <Name>CAI_BibliotecaTP.Negocio</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLibro.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

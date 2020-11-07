@@ -108,14 +108,14 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnAgregarLibro_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new FrmAgregarLibros());
 
             //OcultarSubMenu();
         }
 
         private void btnMostrarLibro_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new FrmMostrarLibros());
 
             //OcultarSubMenu();
         }

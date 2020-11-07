@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelEjemplares = new System.Windows.Forms.Panel();
             this.btnMostrarEjemplares = new FontAwesome.Sharp.IconButton();
@@ -49,9 +48,9 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnMail = new FontAwesome.Sharp.IconButton();
             this.btnFace = new FontAwesome.Sharp.IconButton();
+            this.btnMail = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelEjemplares.SuspendLayout();
             this.panelLibros.SuspendLayout();
@@ -422,7 +421,7 @@
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Image = global::CAI_BibliotecaTP.Formualarios.Properties.Resources.imgLibro;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 141);
@@ -441,39 +440,6 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(760, 507);
             this.panelContenedor.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(278, 93);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(212, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BIBILIOTECA STUDIO";
-            // 
-            // btnMail
-            // 
-            this.btnMail.FlatAppearance.BorderSize = 0;
-            this.btnMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnMail.ForeColor = System.Drawing.Color.White;
-            this.btnMail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.btnMail.IconColor = System.Drawing.Color.White;
-            this.btnMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMail.IconSize = 45;
-            this.btnMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMail.Location = new System.Drawing.Point(97, 208);
-            this.btnMail.Name = "btnMail";
-            this.btnMail.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMail.Rotation = 0D;
-            this.btnMail.Size = new System.Drawing.Size(171, 50);
-            this.btnMail.TabIndex = 2;
-            this.btnMail.Text = "MAIL";
-            this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMail.UseVisualStyleBackColor = true;
             // 
             // btnFace
             // 
@@ -497,6 +463,39 @@
             this.btnFace.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFace.UseVisualStyleBackColor = true;
             // 
+            // btnMail
+            // 
+            this.btnMail.FlatAppearance.BorderSize = 0;
+            this.btnMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMail.ForeColor = System.Drawing.Color.White;
+            this.btnMail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.btnMail.IconColor = System.Drawing.Color.White;
+            this.btnMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMail.IconSize = 45;
+            this.btnMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMail.Location = new System.Drawing.Point(97, 208);
+            this.btnMail.Name = "btnMail";
+            this.btnMail.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMail.Rotation = 0D;
+            this.btnMail.Size = new System.Drawing.Size(171, 50);
+            this.btnMail.TabIndex = 2;
+            this.btnMail.Text = "MAIL";
+            this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMail.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(278, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(212, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BIBILIOTECA STUDIO";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -509,7 +508,7 @@
             this.MinimumSize = new System.Drawing.Size(940, 540);
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmInicio";
+            this.Text = "BIBLIOTECA STUDIO";
             this.panelMenu.ResumeLayout(false);
             this.panelEjemplares.ResumeLayout(false);
             this.panelLibros.ResumeLayout(false);
