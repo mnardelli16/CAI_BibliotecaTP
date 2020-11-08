@@ -13,6 +13,8 @@ namespace CAI_BibliotecaTP.Consola
     {
         static ClienteServicio _clienteServicio;
         static LibroServicio _libroServicio;
+        static EjemplarServicio _ejemplares;
+        static PrestamoServicio _prestamos;
         static void Main(string[] args)
         {
             // prueba para traer clientes de nuestro registro nada mas
@@ -29,17 +31,36 @@ namespace CAI_BibliotecaTP.Consola
 
             // prueba para trear LIBROS
 
-            _libroServicio = new LibroServicio();
+            //_libroServicio = new LibroServicio();
 
-            List<Libro> c = _libroServicio.TraerTodosLosLibros();
+            //List<Libro> c = _libroServicio.TraerTodosLosLibros();
 
-            foreach(Libro d in c)
+            //foreach (Libro d in c)
+            //{
+            //    Console.WriteLine(d.ToString());
+            //}
+
+            // prueba para traer EJEMPLARES
+
+            //_ejemplares = new EjemplarServicio();
+
+            //List<Ejemplar> e = _ejemplares.TraerEjemplares();
+
+            //foreach (Ejemplar a in e)
+            //{
+            //    Console.WriteLine(a.ToString());
+            //}
+
+            //prueba para traer PRESTAMOS
+
+            _prestamos = new PrestamoServicio();
+
+            List<Prestamo> p = _prestamos.TraerTodosLosPrestamos();
+
+            foreach(Prestamo a in p)
             {
-                Console.WriteLine(d.ToString());
+                Console.WriteLine(p.ToString());
             }
-
-
-
 
             Console.ReadLine();
         }
