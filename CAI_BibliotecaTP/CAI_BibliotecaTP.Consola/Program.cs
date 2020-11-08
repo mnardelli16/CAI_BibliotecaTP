@@ -59,7 +59,7 @@ namespace CAI_BibliotecaTP.Consola
 
             foreach(Prestamo a in p)
             {
-                Console.WriteLine(p.ToString());
+                Console.WriteLine(a.ToString());
             }
 
             Console.ReadLine();

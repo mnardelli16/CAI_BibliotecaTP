@@ -26,6 +26,7 @@ namespace CAI_BibliotecaTP.Entidades.Entidades
             this._idEjemplar = IdEjemplar;
             this._plazo = Plazo;
             this._fechaAlta = FechaAlta;
+            this._fechaBaja = FechaAlta.AddDays(_plazo);
             this._estado = true;
         }
 
