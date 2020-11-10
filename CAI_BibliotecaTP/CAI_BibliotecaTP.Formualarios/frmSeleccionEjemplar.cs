@@ -15,10 +15,12 @@ namespace CAI_BibliotecaTP.Formualarios
     public partial class frmSeleccionEjemplar : Form
     {
         EjemplarServicio _ejemplarServicio;
+        LibroServicio _libroServicio;
         public frmSeleccionEjemplar()
         {
             InitializeComponent();
             _ejemplarServicio = new EjemplarServicio();
+            _libroServicio = new LibroServicio();
             CargarEjemplares();
         }
 
@@ -28,15 +30,32 @@ namespace CAI_BibliotecaTP.Formualarios
             List<Ejemplar> ejemplar = _ejemplarServicio.TraerEjemplares();
 
             dgvMostrarEjemplares.Columns.Add("id", "ID EJEMPLAR");    // FALTA ALGREGAR EL NOMBRE DEL LIBRO
+            dgvMostrarEjemplares.Columns.Add("idLibro", "LIBRO");    // FALTA ALGREGAR EL NOMBRE DEL LIBRO
             dgvMostrarEjemplares.Columns.Add("observaciones", "OBSERVACIONES");
             dgvMostrarEjemplares.Columns.Add("precio", "PRECIO");
             dgvMostrarEjemplares.Columns.Add("fechaalta", "FECHA ALTA");
 
             foreach (Ejemplar c in ejemplar)
             {
-                dgvMostrarEjemplares.Rows.Add(c.Id, c.Observaciones, c.Precio, c.FechaAlta);
+                dgvMostrarEjemplares.Rows.Add(c.Id, TraerLibroPorID(c.IdLibro), c.Observaciones, c.Precio, c.FechaAlta);
             }
 
+        }
+
+        private string TraerLibroPorID(int id)
+        {
+            Libro L = _libroServicio.TraerLibroPorID(id);
+            string msj;
+
+            if(L is null)
+            {
+                return msj = "";
+            }
+            else
+            {
+                return msj = L.Titulo;
+            }
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

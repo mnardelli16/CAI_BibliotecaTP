@@ -56,7 +56,7 @@
             this.dgvMostrarEjemplares.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -73,7 +73,8 @@
             this.dgvMostrarEjemplares.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMostrarEjemplares.EnableHeadersVisualStyles = false;
             this.dgvMostrarEjemplares.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.dgvMostrarEjemplares.Location = new System.Drawing.Point(45, 25);
+            this.dgvMostrarEjemplares.Location = new System.Drawing.Point(52, 31);
+            this.dgvMostrarEjemplares.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dgvMostrarEjemplares.Name = "dgvMostrarEjemplares";
             this.dgvMostrarEjemplares.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -91,7 +92,7 @@
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
             this.dgvMostrarEjemplares.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvMostrarEjemplares.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvMostrarEjemplares.Size = new System.Drawing.Size(720, 207);
+            this.dgvMostrarEjemplares.Size = new System.Drawing.Size(840, 255);
             this.dgvMostrarEjemplares.TabIndex = 2;
             // 
             // btnSeleccionar
@@ -103,9 +104,10 @@
             this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSeleccionar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionar.Location = new System.Drawing.Point(529, 255);
+            this.btnSeleccionar.Location = new System.Drawing.Point(617, 314);
+            this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSeleccionar.Name = "btnSeleccionar";
-            this.btnSeleccionar.Size = new System.Drawing.Size(122, 38);
+            this.btnSeleccionar.Size = new System.Drawing.Size(142, 47);
             this.btnSeleccionar.TabIndex = 5;
             this.btnSeleccionar.Text = "Seleccionar";
             this.btnSeleccionar.UseVisualStyleBackColor = false;
@@ -120,9 +122,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(161, 255);
+            this.btnCancelar.Location = new System.Drawing.Point(188, 314);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(122, 38);
+            this.btnCancelar.Size = new System.Drawing.Size(142, 47);
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -130,16 +133,18 @@
             // 
             // frmSeleccionEjemplar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(794, 319);
+            this.ClientSize = new System.Drawing.Size(926, 393);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnSeleccionar);
             this.Controls.Add(this.dgvMostrarEjemplares);
+            this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmSeleccionEjemplar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSeleccionEjemplar";
+            this.Text = "SELECCION EJEMPLAR";
             ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarEjemplares)).EndInit();
             this.ResumeLayout(false);
 

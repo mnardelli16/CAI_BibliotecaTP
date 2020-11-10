@@ -12,16 +12,23 @@ namespace CAI_BibliotecaTP.Negocio
     public class LibroServicio
     {
         private LibroMapper _mapper;
+        private List<Libro> _lstLibros;
 
         public LibroServicio()
         {
             _mapper = new LibroMapper();
+            _lstLibros = _mapper.TraerTodosLosLibros();
         }
 
         public List<Libro> TraerTodosLosLibros()
         {
-            List<Libro> resultado = _mapper.TraerTodosLosLibros();
+            List<Libro> resultado = _lstLibros;
             return resultado;
+        }
+
+        public Libro TraerLibroPorID(int id)
+        {
+            return _lstLibros.Find(z => z.Id == id);
         }
 
         public int InsertarLibro(Libro L)

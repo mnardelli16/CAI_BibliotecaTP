@@ -29,6 +29,10 @@ namespace CAI_BibliotecaTP.Negocio
         {
              return _lstClientes.Find(z => z.Id == id);
         }
+        public Cliente TraerClientePorDNI(int dni)
+        {
+            return _lstClientes.Find(z => z.Dni == dni);
+        }
 
         public int InsertarCliente(Cliente cli)
         {

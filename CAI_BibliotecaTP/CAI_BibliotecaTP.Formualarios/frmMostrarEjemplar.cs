@@ -31,6 +31,8 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             _listaLibro = _libroServicio.TraerTodosLosLibros();
 
+            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
+
             foreach (Libro A in _listaLibro)
             {
                 comboBox1.Items.Add(A.Id + " - " + A.Titulo);

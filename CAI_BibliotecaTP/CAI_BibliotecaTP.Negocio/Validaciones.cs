@@ -100,5 +100,25 @@ namespace CAI_BibliotecaTP.Negocio
             return msj;
 
         }
+
+        public static string ValidarPlazo(string num, string campo, ref int salida)
+        {
+            string msj;
+
+            if (!Int32.TryParse(num, out salida))
+            {
+                msj = "El campo " + campo + " debe ser valor numerico" + Environment.NewLine;
+            }
+            else if (salida <= 0)
+            {
+                msj = "El campo " + campo + " debe ser mayor que cero" + Environment.NewLine;
+            }
+            else
+            {
+                msj = "";
+            }
+            return msj;
+
+        }
     }
 }

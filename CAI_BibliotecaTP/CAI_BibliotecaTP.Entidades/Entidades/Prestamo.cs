@@ -19,7 +19,7 @@ namespace CAI_BibliotecaTP.Entidades.Entidades
         private DateTime _fechaBajaReal;
         private bool _estado;
 
-        public Prestamo(int IdCliente, int IdEjemplar, int Plazo, bool abierto, DateTime FechaAlta, DateTime FechaBaja )
+        public Prestamo(int IdCliente, int IdEjemplar, int Plazo, bool abierto, DateTime FechaAlta, DateTime Fechatentiva, DateTime FechaBaja )
         {
             //this._id = Id;
             this._idCliente = IdCliente;
@@ -27,7 +27,7 @@ namespace CAI_BibliotecaTP.Entidades.Entidades
             this._plazo = Plazo;
             this._estado = abierto;
             this._fechaAlta = FechaAlta;
-            this._fechaBajaTentativa = FechaAlta.AddDays(_plazo);
+            this._fechaBajaTentativa = Fechatentiva;
             this._fechaBajaReal = FechaBaja;
         }
 
