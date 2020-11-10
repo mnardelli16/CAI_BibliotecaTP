@@ -24,6 +24,7 @@ namespace CAI_BibliotecaTP.Formualarios
             panelLibros.Visible = false;
             panelPrestamos.Visible = false;
             panelEjemplares.Visible = false;
+            panelReportes.Visible = false;
         }
 
         private void OcultarSubMenu()
@@ -36,6 +37,8 @@ namespace CAI_BibliotecaTP.Formualarios
                 panelPrestamos.Visible = false;
             if (panelEjemplares.Visible)
                 panelEjemplares.Visible = false;
+            if (panelReportes.Visible)
+                panelReportes.Visible = false;
         }
 
         private void MostrarSubmenu(Panel Submenu)
@@ -143,6 +146,16 @@ namespace CAI_BibliotecaTP.Formualarios
         }
         #endregion
 
+        #region MenuReportes
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            MostrarSubmenu(panelReportes);
+
+        }
+
+        #endregion
+
         private Form _formActivo = null;
         internal void AbrirFormularioHijo(Form hijo)
         {
@@ -159,6 +172,7 @@ namespace CAI_BibliotecaTP.Formualarios
             hijo.BringToFront();
             hijo.Show();
         }
+
 
     }
 }

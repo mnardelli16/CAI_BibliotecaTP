@@ -36,6 +36,15 @@ namespace CAI_BibliotecaTP.Formualarios
                 string _STRfechaNacimiento = datetimePickerNacimiento.Text;
                 bool _activo = false;
 
+                //int edad = Convert.ToInt32(((DateTime.Now - datetimePickerNacimiento.Value).TotalDays / 365));
+                
+                int edad = DateTime.Today.Year - datetimePickerNacimiento.Value.Year;
+
+                if(DateTime.Today < datetimePickerNacimiento.Value.AddYears(edad))
+                {
+                    edad--;
+                }
+
                 if (checkActivo.Checked)
                 {
                     _activo = true;
@@ -49,6 +58,11 @@ namespace CAI_BibliotecaTP.Formualarios
                 msj += Validaciones.ValidarSTRING(_direccion, "Direccion");
                 msj += Validaciones.ValidarSTRING(_email, "Email");
                 msj += Validaciones.ValidarTelefono(_STRtelefono, "Telefono", ref _telefono);
+
+                if(edad < 18)
+                {
+                    msj += "Debe ser mayor a 18 años";
+                }
 
                 if (!string.IsNullOrWhiteSpace(msj))
                 {
