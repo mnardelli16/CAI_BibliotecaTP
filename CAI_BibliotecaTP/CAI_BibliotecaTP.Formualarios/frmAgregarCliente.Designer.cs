@@ -95,7 +95,7 @@
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.White;
             this.btnVolver.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.btnVolver.IconColor = System.Drawing.Color.White;
@@ -120,7 +120,7 @@
             this.btnAgregarClientes.FlatAppearance.BorderSize = 0;
             this.btnAgregarClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarClientes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnAgregarClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarClientes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarClientes.ForeColor = System.Drawing.Color.White;
             this.btnAgregarClientes.IconChar = FontAwesome.Sharp.IconChar.UserPlus;
             this.btnAgregarClientes.IconColor = System.Drawing.Color.White;

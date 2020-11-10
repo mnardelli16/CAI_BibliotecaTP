@@ -84,14 +84,14 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnAgregarPrestamo_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new frmAgregarPrestamo());
 
             //OcultarSubMenu();
         }
 
         private void bntMostrarPrestamos_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new frmMostrarPrestamos());
 
             //OcultarSubMenu();
         }
@@ -130,14 +130,14 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnAgregarEjemplares_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new frmAgregarEjemplar());
 
             //OcultarSubMenu();
         }
 
         private void btnMostrarEjemplares_Click(object sender, EventArgs e)
         {
-            //CODIGO
+            AbrirFormularioHijo(new frmMostrarEjemplar());
 
             //OcultarSubMenu();
         }

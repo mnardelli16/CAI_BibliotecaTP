@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 namespace CAI_BibliotecaTP.Entidades.Entidades
 {
     [DataContract]
-    public class Ejemplar : Libro
+    public class Ejemplar
     {
         private int _id;
         private int _idLibro;
         private string _obs;
         private double _precio;
         private DateTime _fechaAlta;
-        public Ejemplar (int id, string Titulo, string Autor, int Edicion, string Editorial, int Paginas, string Tema, string Observaciones, double Precio, DateTime FechaAlta)
-            :base(Titulo, Autor, Edicion, Editorial, Paginas, Tema)
+        public Ejemplar (int idlibro, string Observaciones, double Precio, DateTime FechaAlta)
         {
-            this._id = id;
+            this._idLibro = idlibro;
             this._obs = Observaciones;
             this._precio = Precio;
             this._fechaAlta = FechaAlta;

@@ -12,15 +12,36 @@ namespace CAI_BibliotecaTP.Negocio
     public class PrestamoServicio
     {
         private PrestamoMapper _mapper;
+        List<Prestamo> _lstPrestamo;
+        private ClienteServicio _clienteServicio;
         public PrestamoServicio()
         {
             _mapper = new PrestamoMapper();
+            _lstPrestamo = _mapper.TraerPrestamos();
+            _clienteServicio = new ClienteServicio();
         }
 
         public List<Prestamo> TraerTodosLosPrestamos()
         {
-            List<Prestamo> prestamos = _mapper.TraerPrestamos();
-            return prestamos;
+            return _lstPrestamo;
+        }
+
+        public List<Prestamo> TrearPretamosDeClientes()
+        {
+            List<Cliente> cli = _clienteServicio.TraerClientes();
+            List<Prestamo> aux = new List<Prestamo>();
+
+            foreach(Prestamo P in _lstPrestamo)
+            {
+                foreach(Cliente C in cli)
+                {
+                    if(C.Id == P.IdCliente)
+                    {
+                        aux.Add(P);
+                    }
+                }
+            }
+            return aux;
         }
 
         public int InsertarPrestamo(Prestamo P)

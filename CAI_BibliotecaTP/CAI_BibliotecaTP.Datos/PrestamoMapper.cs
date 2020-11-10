@@ -14,7 +14,6 @@ namespace CAI_BibliotecaTP.Datos
 {
     public class PrestamoMapper
     {
-        //No me deja poner el nro de registro para el get y post (ConfigurationManager)
         private List<Prestamo> MapList(string json)
         {
             List<Prestamo> prestamos = JsonConvert.DeserializeObject<List<Prestamo>>(json);
@@ -38,11 +37,10 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("idEjemplar", P.IdEjemplar.ToString());
             obj.Add("Plazo", P.Plazo.ToString());
             obj.Add("Abierto", P.Estado.ToString());
-            obj.Add("FechaPrestamo", P.FechaAlta.ToString());
-            obj.Add("FechaPrestamo", P.FechaAlta.ToShortDateString());
-            obj.Add("FechaDevolucionTentativa", P.FechaBaja.ToShortDateString());
-            obj.Add("FechaDevolucionReal", P.FechaBajaReal.ToShortDateString());
-            obj.Add("id", P.Id.ToString());
+            obj.Add("FechaPrestamo", P.FechaPrestamo.ToShortDateString());
+            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToShortDateString());
+            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToShortDateString());
+            //obj.Add("id", P.Id.ToString());
 
             return obj;
         }

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,11 +39,31 @@ namespace CAI_BibliotecaTP.Formualarios
             dgvMostrarClientes.Columns.Add("apellido", "Apellido");
             dgvMostrarClientes.Columns.Add("direccion", "Direccion");
             dgvMostrarClientes.Columns.Add("email", "Email");
+            dgvMostrarClientes.Columns.Add("tefono", "Telefono");
+            dgvMostrarClientes.Columns.Add("fechanacimiento", "F. Nacimiento");
+            dgvMostrarClientes.Columns.Add("fechaalta", "F. Alta");
+            dgvMostrarClientes.Columns.Add("activo", "Activo");
+
+
 
             foreach (Cliente c in lst)
             {
-                dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email);
+                dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email,c.Telefono,c.FechaNacimiento.ToShortDateString(),c.FechaAlta.ToShortDateString(),DeterminarCliente(c.Activo));
             }
+        }
+
+        private string DeterminarCliente(bool a)
+        {
+            string estado;
+            if (a)
+            {
+                estado = "Activo";
+            }
+            else
+            {
+                estado = "Inactivo";
+            }
+            return estado;
         }
     }
 }

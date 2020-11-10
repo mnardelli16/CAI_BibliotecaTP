@@ -11,17 +11,23 @@ namespace CAI_BibliotecaTP.Negocio
     public class ClienteServicio
     {
         private ClienteMapper mapper;
-
+        private List<Cliente> _lstClientes;
         public ClienteServicio()
         {
             mapper = new ClienteMapper();
+            _lstClientes = mapper.TraerTodos();
         }
 
         public List<Cliente> TraerClientes()
         {
-            List<Cliente> result = mapper.TraerTodos();  
+            List<Cliente> result = _lstClientes;
                                                         
             return result;
+        }
+
+        public Cliente TraerClientePorID(int id)
+        {
+             return _lstClientes.Find(z => z.Id == id);
         }
 
         public int InsertarCliente(Cliente cli)

@@ -55,11 +55,23 @@
     <Compile Include="frmAgregarCliente.Designer.cs">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAgregarEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarEjemplar.Designer.cs">
+      <DependentUpon>frmAgregarEjemplar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAgregarLibros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmAgregarLibros.Designer.cs">
       <DependentUpon>FrmAgregarLibros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarPrestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgregarPrestamo.Designer.cs">
+      <DependentUpon>frmAgregarPrestamo.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmInicio.cs">
       <SubType>Form</SubType>
@@ -73,19 +85,43 @@
     <Compile Include="frmMostrarClientes.Designer.cs">
       <DependentUpon>frmMostrarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMostrarEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarEjemplar.Designer.cs">
+      <DependentUpon>frmMostrarEjemplar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMostrarLibros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmMostrarLibros.Designer.cs">
       <DependentUpon>FrmMostrarLibros.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMostrarPrestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMostrarPrestamos.Designer.cs">
+      <DependentUpon>frmMostrarPrestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSeleccionEjemplar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSeleccionEjemplar.Designer.cs">
+      <DependentUpon>frmSeleccionEjemplar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAgregarCliente.resx">
       <DependentUpon>frmAgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarEjemplar.resx">
+      <DependentUpon>frmAgregarEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAgregarLibros.resx">
       <DependentUpon>FrmAgregarLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarPrestamo.resx">
+      <DependentUpon>frmAgregarPrestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
@@ -93,8 +129,17 @@
     <EmbeddedResource Include="frmMostrarClientes.resx">
       <DependentUpon>frmMostrarClientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarEjemplar.resx">
+      <DependentUpon>frmMostrarEjemplar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMostrarLibros.resx">
       <DependentUpon>FrmMostrarLibros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMostrarPrestamos.resx">
+      <DependentUpon>frmMostrarPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSeleccionEjemplar.resx">
+      <DependentUpon>frmSeleccionEjemplar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

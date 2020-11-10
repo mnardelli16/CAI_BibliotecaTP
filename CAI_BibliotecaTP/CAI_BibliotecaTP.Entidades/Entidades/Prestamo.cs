@@ -15,19 +15,20 @@ namespace CAI_BibliotecaTP.Entidades.Entidades
         private int _idEjemplar;
         private int _plazo;
         private DateTime _fechaAlta;
-        private DateTime _fechaBaja;
+        private DateTime _fechaBajaTentativa;
         private DateTime _fechaBajaReal;
         private bool _estado;
 
-        public Prestamo(int Id, int IdCliente, int IdEjemplar, int Plazo, DateTime FechaAlta, DateTime FechaBaja, bool abierto)
+        public Prestamo(int IdCliente, int IdEjemplar, int Plazo, bool abierto, DateTime FechaAlta, DateTime FechaBaja )
         {
-            this._id = Id;
+            //this._id = Id;
             this._idCliente = IdCliente;
             this._idEjemplar = IdEjemplar;
             this._plazo = Plazo;
+            this._estado = abierto;
             this._fechaAlta = FechaAlta;
-            this._fechaBaja = FechaAlta.AddDays(_plazo);
-            this._estado = true;
+            this._fechaBajaTentativa = FechaAlta.AddDays(_plazo);
+            this._fechaBajaReal = FechaBaja;
         }
 
         [DataMember]
@@ -39,17 +40,17 @@ namespace CAI_BibliotecaTP.Entidades.Entidades
         [DataMember]
         public int Plazo { get => _plazo; set => _plazo = value; }
         [DataMember]
-        public DateTime FechaAlta { get => _fechaAlta; set => _fechaAlta = value; }
+        public DateTime FechaPrestamo { get => _fechaAlta; set => _fechaAlta = value; }
         [DataMember]
-        public DateTime FechaBaja { get => _fechaBaja; set => _fechaBaja = value; }
+        public DateTime FechaDevolucionTentativa { get => _fechaBajaTentativa; set => _fechaBajaTentativa = value; }
         [DataMember]
-        public DateTime FechaBajaReal { get => _fechaBajaReal; set => _fechaBajaReal = value; }
+        public DateTime FechaDevolucionReal { get => _fechaBajaReal; set => _fechaBajaReal = value; }
         [DataMember]
         public bool Estado { get => _estado; set => _estado = value; }
 
         public override string ToString()
         {
-            return string.Format($"Cliente: {_idCliente} - Ejemplar: {_idEjemplar} - Plazo: {_plazo} dias - Fecha de Prestamo: {_fechaAlta} - Fecha de devolucion estimada: {_fechaBaja} - Fecha de devolucion real {_fechaBajaReal}");
+            return string.Format($"Cliente: {_idCliente} - Ejemplar: {_idEjemplar} - Plazo: {_plazo} dias - Fecha de Prestamo: {_fechaAlta} - Fecha de devolucion estimada: {_fechaBajaTentativa} - Fecha de devolucion real {_fechaBajaReal}");
         }
     }
 }

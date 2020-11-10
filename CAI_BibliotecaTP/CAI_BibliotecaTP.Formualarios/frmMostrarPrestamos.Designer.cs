@@ -1,6 +1,6 @@
 ﻿namespace CAI_BibliotecaTP.Formualarios
 {
-    partial class frmMostrarClientes
+    partial class frmMostrarPrestamos
     {
         /// <summary>
         /// Required designer variable.
@@ -33,29 +33,27 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvMostrarClientes = new System.Windows.Forms.DataGridView();
-            this.btnMostrar = new System.Windows.Forms.Button();
+            this.dgvMostrarPrestamos = new System.Windows.Forms.DataGridView();
+            this.btnCargarPrestamos = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarPrestamos)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvMostrarClientes
+            // dgvMostrarPrestamos
             // 
-            this.dgvMostrarClientes.AllowUserToAddRows = false;
-            this.dgvMostrarClientes.AllowUserToDeleteRows = false;
-            this.dgvMostrarClientes.AllowUserToResizeRows = false;
+            this.dgvMostrarPrestamos.AllowUserToAddRows = false;
+            this.dgvMostrarPrestamos.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            this.dgvMostrarClientes.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvMostrarClientes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgvMostrarPrestamos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvMostrarPrestamos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMostrarClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMostrarClientes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.dgvMostrarClientes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgvMostrarClientes.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.dgvMostrarPrestamos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMostrarPrestamos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.dgvMostrarPrestamos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -63,8 +61,8 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMostrarClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvMostrarClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMostrarPrestamos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMostrarPrestamos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,12 +70,12 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMostrarClientes.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvMostrarClientes.EnableHeadersVisualStyles = false;
-            this.dgvMostrarClientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.dgvMostrarClientes.Location = new System.Drawing.Point(39, 31);
-            this.dgvMostrarClientes.Name = "dgvMostrarClientes";
-            this.dgvMostrarClientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.dgvMostrarPrestamos.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvMostrarPrestamos.EnableHeadersVisualStyles = false;
+            this.dgvMostrarPrestamos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.dgvMostrarPrestamos.Location = new System.Drawing.Point(33, 26);
+            this.dgvMostrarPrestamos.Name = "dgvMostrarPrestamos";
+            this.dgvMostrarPrestamos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -85,33 +83,32 @@
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMostrarClientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvMostrarClientes.RowHeadersVisible = false;
+            this.dgvMostrarPrestamos.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvMostrarPrestamos.RowHeadersVisible = false;
             dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            this.dgvMostrarClientes.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvMostrarClientes.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvMostrarClientes.Size = new System.Drawing.Size(666, 370);
-            this.dgvMostrarClientes.TabIndex = 0;
+            this.dgvMostrarPrestamos.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvMostrarPrestamos.Size = new System.Drawing.Size(666, 337);
+            this.dgvMostrarPrestamos.TabIndex = 1;
             // 
-            // btnMostrar
+            // btnCargarPrestamos
             // 
-            this.btnMostrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
-            this.btnMostrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMostrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMostrar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrar.ForeColor = System.Drawing.Color.White;
-            this.btnMostrar.Location = new System.Drawing.Point(583, 418);
-            this.btnMostrar.Name = "btnMostrar";
-            this.btnMostrar.Size = new System.Drawing.Size(122, 38);
-            this.btnMostrar.TabIndex = 1;
-            this.btnMostrar.Text = "Cargar Clientes";
-            this.btnMostrar.UseVisualStyleBackColor = false;
-            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            this.btnCargarPrestamos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCargarPrestamos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
+            this.btnCargarPrestamos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCargarPrestamos.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCargarPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCargarPrestamos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCargarPrestamos.ForeColor = System.Drawing.Color.White;
+            this.btnCargarPrestamos.Location = new System.Drawing.Point(577, 385);
+            this.btnCargarPrestamos.Name = "btnCargarPrestamos";
+            this.btnCargarPrestamos.Size = new System.Drawing.Size(122, 38);
+            this.btnCargarPrestamos.TabIndex = 2;
+            this.btnCargarPrestamos.Text = "Mostrar Prestamos";
+            this.btnCargarPrestamos.UseVisualStyleBackColor = false;
+            this.btnCargarPrestamos.Click += new System.EventHandler(this.btnCargarPrestamos_Click);
             // 
             // btnVolver
             // 
@@ -122,36 +119,35 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(39, 418);
+            this.btnVolver.Location = new System.Drawing.Point(33, 385);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(112, 38);
-            this.btnVolver.TabIndex = 2;
+            this.btnVolver.TabIndex = 3;
             this.btnVolver.Text = "Volver a Inicio";
             this.btnVolver.UseVisualStyleBackColor = false;
-            this.btnVolver.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
-            // frmMostrarClientes
+            // frmMostrarPrestamos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(744, 468);
             this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.btnMostrar);
-            this.Controls.Add(this.dgvMostrarClientes);
-            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Controls.Add(this.btnCargarPrestamos);
+            this.Controls.Add(this.dgvMostrarPrestamos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmMostrarClientes";
-            this.Text = "frmMostrarClientes";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarClientes)).EndInit();
+            this.Name = "frmMostrarPrestamos";
+            this.Text = "frmMostrarPrestamos";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMostrarPrestamos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvMostrarClientes;
-        private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.DataGridView dgvMostrarPrestamos;
+        private System.Windows.Forms.Button btnCargarPrestamos;
         private System.Windows.Forms.Button btnVolver;
     }
 }

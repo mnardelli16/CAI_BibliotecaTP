@@ -42,14 +42,14 @@ namespace CAI_BibliotecaTP.Consola
 
             // prueba para traer EJEMPLARES
 
-            //_ejemplares = new EjemplarServicio();
+            _ejemplares = new EjemplarServicio();
 
-            //List<Ejemplar> e = _ejemplares.TraerEjemplares();
+            List<Ejemplar> e = _ejemplares.TraerEjemplares();
 
-            //foreach (Ejemplar a in e)
-            //{
-            //    Console.WriteLine(a.ToString());
-            //}
+            foreach (Ejemplar a in e)
+            {
+                Console.WriteLine(a.ToString());
+            }
 
             //prueba para traer PRESTAMOS
 

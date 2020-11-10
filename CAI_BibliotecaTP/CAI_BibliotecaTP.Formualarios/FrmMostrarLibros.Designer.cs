@@ -40,17 +40,16 @@
             this.txtEdicion = new System.Windows.Forms.TextBox();
             this.txtTema = new System.Windows.Forms.TextBox();
             this.txtPagina = new System.Windows.Forms.TextBox();
-            this.btnVolver = new FontAwesome.Sharp.IconButton();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.btnVolver = new FontAwesome.Sharp.IconButton();
             this.panelLibros.SuspendLayout();
             this.panelDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLibros
             // 
-            this.panelLibros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelLibros.Controls.Add(this.lstLibros);
+            this.panelLibros.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLibros.Location = new System.Drawing.Point(0, 0);
             this.panelLibros.Name = "panelLibros";
             this.panelLibros.Size = new System.Drawing.Size(363, 429);
@@ -171,8 +170,28 @@
             this.txtPagina.Size = new System.Drawing.Size(184, 21);
             this.txtPagina.TabIndex = 11;
             // 
+            // panelDatos
+            // 
+            this.panelDatos.Controls.Add(this.btnVolver);
+            this.panelDatos.Controls.Add(this.txtAutor);
+            this.panelDatos.Controls.Add(this.txtPagina);
+            this.panelDatos.Controls.Add(this.lblAutor);
+            this.panelDatos.Controls.Add(this.lblPaginas);
+            this.panelDatos.Controls.Add(this.txtEdicion);
+            this.panelDatos.Controls.Add(this.txtTema);
+            this.panelDatos.Controls.Add(this.lblEditorial);
+            this.panelDatos.Controls.Add(this.lblTema);
+            this.panelDatos.Controls.Add(this.lblEdicion);
+            this.panelDatos.Controls.Add(this.txtEditorial);
+            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelDatos.Location = new System.Drawing.Point(369, 0);
+            this.panelDatos.Name = "panelDatos";
+            this.panelDatos.Size = new System.Drawing.Size(359, 429);
+            this.panelDatos.TabIndex = 19;
+            // 
             // btnVolver
             // 
+            this.btnVolver.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVolver.FlatAppearance.BorderSize = 0;
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVolver.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -194,25 +213,6 @@
             this.btnVolver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
-            // 
-            // panelDatos
-            // 
-            this.panelDatos.Controls.Add(this.btnVolver);
-            this.panelDatos.Controls.Add(this.txtAutor);
-            this.panelDatos.Controls.Add(this.txtPagina);
-            this.panelDatos.Controls.Add(this.lblAutor);
-            this.panelDatos.Controls.Add(this.lblPaginas);
-            this.panelDatos.Controls.Add(this.txtEdicion);
-            this.panelDatos.Controls.Add(this.txtTema);
-            this.panelDatos.Controls.Add(this.lblEditorial);
-            this.panelDatos.Controls.Add(this.lblTema);
-            this.panelDatos.Controls.Add(this.lblEdicion);
-            this.panelDatos.Controls.Add(this.txtEditorial);
-            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelDatos.Location = new System.Drawing.Point(369, 0);
-            this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(359, 429);
-            this.panelDatos.TabIndex = 19;
             // 
             // FrmMostrarLibros
             // 

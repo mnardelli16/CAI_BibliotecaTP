@@ -80,5 +80,25 @@ namespace CAI_BibliotecaTP.Negocio
             }
             return msj;
         }
+
+        public static string ValidarPrecio(string num, string campo, ref double salida)
+        {
+            string msj;
+
+            if (!double.TryParse(num, out salida))
+            {
+                msj = "El campo " + campo + " debe ingresar un valor numerico" + Environment.NewLine;
+            }
+            else if (salida <= 0)
+            {
+                msj = "El campo " + campo + " debe ser positivo" + Environment.NewLine;
+            }
+            else
+            {
+                msj = "";
+            }
+            return msj;
+
+        }
     }
 }
