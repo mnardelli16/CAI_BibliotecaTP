@@ -154,6 +154,16 @@ namespace CAI_BibliotecaTP.Formualarios
 
         }
 
+        private void btnReportePrestamos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmMostrarPrestamos());
+        }
+
+        private void btnReporteEjemplaresPorLibro_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmSeleccionEjemplar());
+        }
+
         #endregion
 
         private Form _formActivo = null;
@@ -173,6 +183,6 @@ namespace CAI_BibliotecaTP.Formualarios
             hijo.Show();
         }
 
-
+        
     }
 }

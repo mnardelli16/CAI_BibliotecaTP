@@ -7,6 +7,7 @@ using System.Data;
 using System.Diagnostics.Tracing;
 using System.Drawing;
 using System.Linq;
+using System.Net.Configuration;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,31 +25,44 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
+            
             this.Close();
         }
 
 
         private void btnMostrar_Click(object sender, EventArgs e)
         {
-            List<Cliente> lst = _clienteServicio.TraerClientes();
+            bool flag = FlagMostrarCliente();
 
-            //forma de hacer un datasource pero personalizado
-            dgvMostrarClientes.Columns.Add("id", "ID");
-            dgvMostrarClientes.Columns.Add("dni", "Dni");
-            dgvMostrarClientes.Columns.Add("nombre", "Nombre");
-            dgvMostrarClientes.Columns.Add("apellido", "Apellido");
-            dgvMostrarClientes.Columns.Add("direccion", "Direccion");
-            dgvMostrarClientes.Columns.Add("email", "Email");
-            dgvMostrarClientes.Columns.Add("tefono", "Telefono");
-            dgvMostrarClientes.Columns.Add("fechanacimiento", "F. Nacimiento");
-            dgvMostrarClientes.Columns.Add("fechaalta", "F. Alta");
-            dgvMostrarClientes.Columns.Add("activo", "Activo");
-
-
-
-            foreach (Cliente c in lst)
+            if (flag == false)
             {
-                dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email,c.Telefono,c.FechaNacimiento.ToShortDateString(),c.FechaAlta.ToShortDateString(),DeterminarCliente(c.Activo));
+                List<Cliente> lst = _clienteServicio.TraerClientes();
+
+                //forma de hacer un datasource pero personalizado
+                dgvMostrarClientes.Columns.Add("id", "ID");
+                dgvMostrarClientes.Columns.Add("dni", "Dni");
+                dgvMostrarClientes.Columns.Add("nombre", "Nombre");
+                dgvMostrarClientes.Columns.Add("apellido", "Apellido");
+                dgvMostrarClientes.Columns.Add("direccion", "Direccion");
+                dgvMostrarClientes.Columns.Add("email", "Email");
+                dgvMostrarClientes.Columns.Add("tefono", "Telefono");
+                dgvMostrarClientes.Columns.Add("fechanacimiento", "F. Nacimiento");
+                dgvMostrarClientes.Columns.Add("fechaalta", "F. Alta");
+                dgvMostrarClientes.Columns.Add("activo", "Activo");
+
+
+
+                foreach (Cliente c in lst)
+                {
+                    dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email, c.Telefono, c.FechaNacimiento.ToShortDateString(), c.FechaAlta.ToShortDateString(), DeterminarCliente(c.Activo));
+                }
+
+                flag = true;
+                FlagMostrarCliente(flag);
+            }
+            else
+            {
+                MessageBox.Show("El listado ya esta actualizado.");
             }
         }
 
@@ -64,6 +78,11 @@ namespace CAI_BibliotecaTP.Formualarios
                 estado = "Inactivo";
             }
             return estado;
+        }
+        private bool FlagMostrarCliente(bool b=false) //validar que la grilla no se cargue varias veces al "Cargar Cliente" (revisar)
+        {
+            bool a = b;
+            return a;
         }
     }
 }

@@ -52,11 +52,11 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.btnFace = new FontAwesome.Sharp.IconButton();
             this.btnMail = new FontAwesome.Sharp.IconButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelReportes.SuspendLayout();
             this.panelEjemplares.SuspendLayout();
@@ -121,6 +121,7 @@
             this.btnReporteEjemplaresPorLibro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporteEjemplaresPorLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReporteEjemplaresPorLibro.UseVisualStyleBackColor = true;
+            this.btnReporteEjemplaresPorLibro.Click += new System.EventHandler(this.btnReporteEjemplaresPorLibro_Click);
             // 
             // btnReportePrestamos
             // 
@@ -144,6 +145,7 @@
             this.btnReportePrestamos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportePrestamos.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReportePrestamos.UseVisualStyleBackColor = true;
+            this.btnReportePrestamos.Click += new System.EventHandler(this.btnReportePrestamos_Click);
             // 
             // btnReportes
             // 
@@ -532,6 +534,28 @@
             this.panelContenedor.Size = new System.Drawing.Size(760, 501);
             this.panelContenedor.TabIndex = 2;
             // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFecha.Location = new System.Drawing.Point(130, 353);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(111, 16);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "FECHA SISTEMA:";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsuario.Location = new System.Drawing.Point(130, 313);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(68, 16);
+            this.lblUsuario.TabIndex = 4;
+            this.lblUsuario.Text = "USUARIO:";
+            // 
             // btnFace
             // 
             this.btnFace.FlatAppearance.BorderSize = 0;
@@ -586,28 +610,6 @@
             this.label1.Size = new System.Drawing.Size(282, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "BIBILIOTECA STUDIO";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(130, 313);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 16);
-            this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Text = "USUARIO:";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFecha.Location = new System.Drawing.Point(130, 353);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(111, 16);
-            this.lblFecha.TabIndex = 5;
-            this.lblFecha.Text = "FECHA SISTEMA:";
             // 
             // FrmInicio
             // 

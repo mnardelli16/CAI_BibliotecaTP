@@ -104,7 +104,7 @@
             this.btnSeleccionar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSeleccionar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSeleccionar.ForeColor = System.Drawing.Color.White;
-            this.btnSeleccionar.Location = new System.Drawing.Point(617, 314);
+            this.btnSeleccionar.Location = new System.Drawing.Point(675, 314);
             this.btnSeleccionar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSeleccionar.Name = "btnSeleccionar";
             this.btnSeleccionar.Size = new System.Drawing.Size(142, 47);
@@ -122,7 +122,7 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(188, 314);
+            this.btnCancelar.Location = new System.Drawing.Point(254, 314);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(142, 47);

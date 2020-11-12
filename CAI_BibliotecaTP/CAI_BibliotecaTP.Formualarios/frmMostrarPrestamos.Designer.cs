@@ -102,7 +102,7 @@
             this.btnCargarPrestamos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCargarPrestamos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargarPrestamos.ForeColor = System.Drawing.Color.White;
-            this.btnCargarPrestamos.Location = new System.Drawing.Point(577, 385);
+            this.btnCargarPrestamos.Location = new System.Drawing.Point(557, 385);
             this.btnCargarPrestamos.Name = "btnCargarPrestamos";
             this.btnCargarPrestamos.Size = new System.Drawing.Size(122, 38);
             this.btnCargarPrestamos.TabIndex = 2;
@@ -119,7 +119,7 @@
             this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnVolver.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.Color.White;
-            this.btnVolver.Location = new System.Drawing.Point(33, 385);
+            this.btnVolver.Location = new System.Drawing.Point(48, 385);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(112, 38);
             this.btnVolver.TabIndex = 3;
