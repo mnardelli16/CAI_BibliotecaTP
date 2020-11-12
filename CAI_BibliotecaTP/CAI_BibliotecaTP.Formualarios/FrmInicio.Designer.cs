@@ -52,6 +52,7 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.lblFechayHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnFace = new FontAwesome.Sharp.IconButton();
@@ -523,23 +524,35 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelContenedor.Controls.Add(this.lblFecha);
-            this.panelContenedor.Controls.Add(this.lblUsuario);
-            this.panelContenedor.Controls.Add(this.btnFace);
-            this.panelContenedor.Controls.Add(this.btnMail);
             this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Controls.Add(this.lblFechayHora);
+            this.panelContenedor.Controls.Add(this.btnMail);
+            this.panelContenedor.Controls.Add(this.lblUsuario);
+            this.panelContenedor.Controls.Add(this.lblFecha);
+            this.panelContenedor.Controls.Add(this.btnFace);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(240, 0);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(760, 501);
             this.panelContenedor.TabIndex = 2;
             // 
+            // lblFechayHora
+            // 
+            this.lblFechayHora.AutoSize = true;
+            this.lblFechayHora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechayHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFechayHora.Location = new System.Drawing.Point(279, 336);
+            this.lblFechayHora.Name = "lblFechayHora";
+            this.lblFechayHora.Size = new System.Drawing.Size(20, 16);
+            this.lblFechayHora.TabIndex = 6;
+            this.lblFechayHora.Text = "...";
+            // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFecha.Location = new System.Drawing.Point(130, 353);
+            this.lblFecha.Location = new System.Drawing.Point(146, 336);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(111, 16);
             this.lblFecha.TabIndex = 5;
@@ -550,7 +563,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(130, 313);
+            this.lblUsuario.Location = new System.Drawing.Point(189, 296);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(68, 16);
             this.lblUsuario.TabIndex = 4;
@@ -567,11 +580,11 @@
             this.btnFace.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnFace.IconSize = 45;
             this.btnFace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFace.Location = new System.Drawing.Point(473, 208);
+            this.btnFace.Location = new System.Drawing.Point(476, 191);
             this.btnFace.Name = "btnFace";
             this.btnFace.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnFace.Rotation = 0D;
-            this.btnFace.Size = new System.Drawing.Size(171, 50);
+            this.btnFace.Size = new System.Drawing.Size(169, 50);
             this.btnFace.TabIndex = 3;
             this.btnFace.Text = "FACEBOOK";
             this.btnFace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -589,11 +602,11 @@
             this.btnMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnMail.IconSize = 45;
             this.btnMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMail.Location = new System.Drawing.Point(116, 208);
+            this.btnMail.Location = new System.Drawing.Point(140, 191);
             this.btnMail.Name = "btnMail";
             this.btnMail.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnMail.Rotation = 0D;
-            this.btnMail.Size = new System.Drawing.Size(171, 50);
+            this.btnMail.Size = new System.Drawing.Size(144, 50);
             this.btnMail.TabIndex = 2;
             this.btnMail.Text = "MAIL";
             this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -602,10 +615,12 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 20.75F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(232, 88);
+            this.label1.Location = new System.Drawing.Point(241, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(282, 34);
             this.label1.TabIndex = 1;
@@ -615,6 +630,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1000, 501);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panelMenu);
@@ -668,5 +684,6 @@
         private FontAwesome.Sharp.IconButton btnReportePrestamos;
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Label lblFechayHora;
     }
 }

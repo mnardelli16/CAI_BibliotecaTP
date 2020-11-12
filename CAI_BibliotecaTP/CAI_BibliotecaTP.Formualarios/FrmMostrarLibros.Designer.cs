@@ -40,19 +40,30 @@
             this.txtEdicion = new System.Windows.Forms.TextBox();
             this.txtTema = new System.Windows.Forms.TextBox();
             this.txtPagina = new System.Windows.Forms.TextBox();
-            this.panelDatos = new System.Windows.Forms.Panel();
             this.btnVolver = new FontAwesome.Sharp.IconButton();
             this.panelLibros.SuspendLayout();
-            this.panelDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLibros
             // 
+            this.panelLibros.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelLibros.Controls.Add(this.btnVolver);
             this.panelLibros.Controls.Add(this.lstLibros);
-            this.panelLibros.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLibros.Controls.Add(this.txtAutor);
+            this.panelLibros.Controls.Add(this.txtPagina);
+            this.panelLibros.Controls.Add(this.txtEditorial);
+            this.panelLibros.Controls.Add(this.lblAutor);
+            this.panelLibros.Controls.Add(this.lblEdicion);
+            this.panelLibros.Controls.Add(this.lblPaginas);
+            this.panelLibros.Controls.Add(this.lblTema);
+            this.panelLibros.Controls.Add(this.txtEdicion);
+            this.panelLibros.Controls.Add(this.lblEditorial);
+            this.panelLibros.Controls.Add(this.txtTema);
             this.panelLibros.Location = new System.Drawing.Point(0, 0);
             this.panelLibros.Name = "panelLibros";
-            this.panelLibros.Size = new System.Drawing.Size(363, 429);
+            this.panelLibros.Size = new System.Drawing.Size(726, 429);
             this.panelLibros.TabIndex = 0;
             // 
             // lstLibros
@@ -63,10 +74,10 @@
             this.lstLibros.ForeColor = System.Drawing.Color.White;
             this.lstLibros.FormattingEnabled = true;
             this.lstLibros.ItemHeight = 17;
-            this.lstLibros.Location = new System.Drawing.Point(12, 25);
+            this.lstLibros.Location = new System.Drawing.Point(12, 23);
             this.lstLibros.Name = "lstLibros";
             this.lstLibros.ScrollAlwaysVisible = true;
-            this.lstLibros.Size = new System.Drawing.Size(198, 357);
+            this.lstLibros.Size = new System.Drawing.Size(233, 374);
             this.lstLibros.TabIndex = 0;
             this.lstLibros.SelectedIndexChanged += new System.EventHandler(this.lstLibros_SelectedIndexChanged);
             // 
@@ -75,7 +86,7 @@
             this.lblAutor.AutoSize = true;
             this.lblAutor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAutor.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAutor.Location = new System.Drawing.Point(14, 56);
+            this.lblAutor.Location = new System.Drawing.Point(270, 36);
             this.lblAutor.Name = "lblAutor";
             this.lblAutor.Size = new System.Drawing.Size(48, 16);
             this.lblAutor.TabIndex = 2;
@@ -86,7 +97,7 @@
             this.lblEditorial.AutoSize = true;
             this.lblEditorial.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditorial.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEditorial.Location = new System.Drawing.Point(14, 103);
+            this.lblEditorial.Location = new System.Drawing.Point(270, 87);
             this.lblEditorial.Name = "lblEditorial";
             this.lblEditorial.Size = new System.Drawing.Size(67, 16);
             this.lblEditorial.TabIndex = 3;
@@ -97,7 +108,7 @@
             this.lblEdicion.AutoSize = true;
             this.lblEdicion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEdicion.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEdicion.Location = new System.Drawing.Point(14, 151);
+            this.lblEdicion.Location = new System.Drawing.Point(270, 135);
             this.lblEdicion.Name = "lblEdicion";
             this.lblEdicion.Size = new System.Drawing.Size(58, 16);
             this.lblEdicion.TabIndex = 4;
@@ -108,7 +119,7 @@
             this.lblTema.AutoSize = true;
             this.lblTema.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTema.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTema.Location = new System.Drawing.Point(14, 193);
+            this.lblTema.Location = new System.Drawing.Point(270, 177);
             this.lblTema.Name = "lblTema";
             this.lblTema.Size = new System.Drawing.Size(40, 16);
             this.lblTema.TabIndex = 5;
@@ -119,7 +130,7 @@
             this.lblPaginas.AutoSize = true;
             this.lblPaginas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaginas.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPaginas.Location = new System.Drawing.Point(14, 239);
+            this.lblPaginas.Location = new System.Drawing.Point(270, 223);
             this.lblPaginas.Name = "lblPaginas";
             this.lblPaginas.Size = new System.Drawing.Size(62, 16);
             this.lblPaginas.TabIndex = 6;
@@ -129,7 +140,7 @@
             // 
             this.txtAutor.Enabled = false;
             this.txtAutor.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAutor.Location = new System.Drawing.Point(168, 55);
+            this.txtAutor.Location = new System.Drawing.Point(361, 36);
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(184, 21);
             this.txtAutor.TabIndex = 7;
@@ -138,7 +149,7 @@
             // 
             this.txtEditorial.Enabled = false;
             this.txtEditorial.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditorial.Location = new System.Drawing.Point(168, 102);
+            this.txtEditorial.Location = new System.Drawing.Point(361, 87);
             this.txtEditorial.Name = "txtEditorial";
             this.txtEditorial.Size = new System.Drawing.Size(184, 21);
             this.txtEditorial.TabIndex = 8;
@@ -147,7 +158,7 @@
             // 
             this.txtEdicion.Enabled = false;
             this.txtEdicion.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdicion.Location = new System.Drawing.Point(168, 146);
+            this.txtEdicion.Location = new System.Drawing.Point(361, 131);
             this.txtEdicion.Name = "txtEdicion";
             this.txtEdicion.Size = new System.Drawing.Size(184, 21);
             this.txtEdicion.TabIndex = 9;
@@ -156,7 +167,7 @@
             // 
             this.txtTema.Enabled = false;
             this.txtTema.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTema.Location = new System.Drawing.Point(168, 188);
+            this.txtTema.Location = new System.Drawing.Point(361, 173);
             this.txtTema.Name = "txtTema";
             this.txtTema.Size = new System.Drawing.Size(184, 21);
             this.txtTema.TabIndex = 10;
@@ -165,29 +176,10 @@
             // 
             this.txtPagina.Enabled = false;
             this.txtPagina.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagina.Location = new System.Drawing.Point(168, 234);
+            this.txtPagina.Location = new System.Drawing.Point(361, 219);
             this.txtPagina.Name = "txtPagina";
             this.txtPagina.Size = new System.Drawing.Size(184, 21);
             this.txtPagina.TabIndex = 11;
-            // 
-            // panelDatos
-            // 
-            this.panelDatos.Controls.Add(this.btnVolver);
-            this.panelDatos.Controls.Add(this.txtAutor);
-            this.panelDatos.Controls.Add(this.txtPagina);
-            this.panelDatos.Controls.Add(this.lblAutor);
-            this.panelDatos.Controls.Add(this.lblPaginas);
-            this.panelDatos.Controls.Add(this.txtEdicion);
-            this.panelDatos.Controls.Add(this.txtTema);
-            this.panelDatos.Controls.Add(this.lblEditorial);
-            this.panelDatos.Controls.Add(this.lblTema);
-            this.panelDatos.Controls.Add(this.lblEdicion);
-            this.panelDatos.Controls.Add(this.txtEditorial);
-            this.panelDatos.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelDatos.Location = new System.Drawing.Point(369, 0);
-            this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(359, 429);
-            this.panelDatos.TabIndex = 19;
             // 
             // btnVolver
             // 
@@ -202,7 +194,7 @@
             this.btnVolver.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnVolver.IconSize = 40;
             this.btnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVolver.Location = new System.Drawing.Point(229, 342);
+            this.btnVolver.Location = new System.Drawing.Point(422, 345);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
             this.btnVolver.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -220,14 +212,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(7)))), ((int)(((byte)(17)))));
             this.ClientSize = new System.Drawing.Size(728, 429);
-            this.Controls.Add(this.panelDatos);
             this.Controls.Add(this.panelLibros);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmMostrarLibros";
             this.Text = "FrmMostrarLibros";
             this.panelLibros.ResumeLayout(false);
-            this.panelDatos.ResumeLayout(false);
-            this.panelDatos.PerformLayout();
+            this.panelLibros.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -247,6 +237,5 @@
         private System.Windows.Forms.TextBox txtTema;
         private System.Windows.Forms.TextBox txtPagina;
         private FontAwesome.Sharp.IconButton btnVolver;
-        private System.Windows.Forms.Panel panelDatos;
     }
 }

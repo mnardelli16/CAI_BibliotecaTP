@@ -79,6 +79,12 @@
     <Compile Include="FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmListarEjemplares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListarEjemplares.Designer.cs">
+      <DependentUpon>frmListarEjemplares.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMostrarClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,12 @@
     <Compile Include="frmMostrarPrestamos.Designer.cs">
       <DependentUpon>frmMostrarPrestamos.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportePrestamosPorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportePrestamosPorCliente.Designer.cs">
+      <DependentUpon>frmReportePrestamosPorCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSeleccionEjemplar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +138,9 @@
     <EmbeddedResource Include="FrmInicio.resx">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListarEjemplares.resx">
+      <DependentUpon>frmListarEjemplares.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarClientes.resx">
       <DependentUpon>frmMostrarClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMostrarPrestamos.resx">
       <DependentUpon>frmMostrarPrestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportePrestamosPorCliente.resx">
+      <DependentUpon>frmReportePrestamosPorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSeleccionEjemplar.resx">
       <DependentUpon>frmSeleccionEjemplar.cs</DependentUpon>

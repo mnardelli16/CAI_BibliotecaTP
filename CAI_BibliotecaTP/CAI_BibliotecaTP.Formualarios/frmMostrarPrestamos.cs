@@ -32,24 +32,34 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnCargarPrestamos_Click(object sender, EventArgs e)
         {
-            List<Prestamo> lst = _prestamoServicio.TrearPretamosDeClientes();
+            bool flag = FlagMostrarPrestamos();
 
-            //forma de hacer un datasource pero personalizado
-            dgvMostrarPrestamos.Columns.Add("id", "ID PRESTAMO");
-            dgvMostrarPrestamos.Columns.Add("idCliente", "CLIENTE");
-            dgvMostrarPrestamos.Columns.Add("idEjemplar", "ID EJEMPLAR");
-            dgvMostrarPrestamos.Columns.Add("plazo", "PLAZO");
-            dgvMostrarPrestamos.Columns.Add("abierto", "ESTADO");
-            dgvMostrarPrestamos.Columns.Add("fechaPrestamo", "FECHA ALTA");
-            dgvMostrarPrestamos.Columns.Add("fechadevtentativa", "FECHA DEV TENTATIVA");
-            dgvMostrarPrestamos.Columns.Add("fechadevreal", "FECHA DEV REAL");
-
-
-
-            foreach (Prestamo c in lst.OrderBy(x => x.Id)) 
+            if (flag == false)
             {
-                dgvMostrarPrestamos.Rows.Add(c.Id, TraerClientePorID(c.IdCliente), c.IdEjemplar, c.Plazo, DeterminarEstado(c.Estado), c.FechaPrestamo.ToShortDateString(), c.FechaDevolucionTentativa.ToShortDateString(), c.FechaDevolucionReal.ToShortDateString());
+                List<Prestamo> lst = _prestamoServicio.TrearPretamosDeClientes();
+
+                //forma de hacer un datasource pero personalizado
+                dgvMostrarPrestamos.Columns.Add("id", "ID PRESTAMO");
+                dgvMostrarPrestamos.Columns.Add("idCliente", "CLIENTE");
+                dgvMostrarPrestamos.Columns.Add("idEjemplar", "ID EJEMPLAR");
+                dgvMostrarPrestamos.Columns.Add("plazo", "PLAZO");
+                dgvMostrarPrestamos.Columns.Add("abierto", "ESTADO");
+                dgvMostrarPrestamos.Columns.Add("fechaPrestamo", "FECHA ALTA");
+                dgvMostrarPrestamos.Columns.Add("fechadevtentativa", "FECHA DEV TENTATIVA");
+                dgvMostrarPrestamos.Columns.Add("fechadevreal", "FECHA DEV REAL");
+
+
+
+                foreach (Prestamo c in lst.OrderBy(x => x.Id))
+                {
+                    dgvMostrarPrestamos.Rows.Add(c.Id, TraerClientePorID(c.IdCliente), c.IdEjemplar, c.Plazo, DeterminarEstado(c.Estado), c.FechaPrestamo.ToShortDateString(), c.FechaDevolucionTentativa.ToShortDateString(), c.FechaDevolucionReal.ToShortDateString());
+                }
             }
+            else
+            {
+                MessageBox.Show("El listado ya esta actualizado.","MESAJE DEL SISTEMA");
+            }
+
 
         }
 
@@ -81,6 +91,16 @@ namespace CAI_BibliotecaTP.Formualarios
             {
                 return "Cerrado";
             }
+        }
+
+        private bool FlagMostrarPrestamos() //validar que la grilla no se cargue varias veces al "Cargar Prestamos"
+        {
+            bool b = false;
+            if (dgvMostrarPrestamos.Rows.Count != 0)
+            {
+                b = true;
+            }
+            return b;
         }
     }
 }

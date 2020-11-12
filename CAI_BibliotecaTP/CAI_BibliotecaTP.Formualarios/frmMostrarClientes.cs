@@ -50,19 +50,15 @@ namespace CAI_BibliotecaTP.Formualarios
                 dgvMostrarClientes.Columns.Add("fechaalta", "F. Alta");
                 dgvMostrarClientes.Columns.Add("activo", "Activo");
 
-
-
                 foreach (Cliente c in lst)
                 {
                     dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email, c.Telefono, c.FechaNacimiento.ToShortDateString(), c.FechaAlta.ToShortDateString(), DeterminarCliente(c.Activo));
                 }
 
-                flag = true;
-                FlagMostrarCliente(flag);
             }
             else
             {
-                MessageBox.Show("El listado ya esta actualizado.");
+                MessageBox.Show("El listado ya esta actualizado.", "MESAJE DEL SISTEMA");
             }
         }
 
@@ -79,10 +75,14 @@ namespace CAI_BibliotecaTP.Formualarios
             }
             return estado;
         }
-        private bool FlagMostrarCliente(bool b=false) //validar que la grilla no se cargue varias veces al "Cargar Cliente" (revisar)
+        private bool FlagMostrarCliente() //validar que la grilla no se cargue varias veces al "Cargar Cliente"
         {
-            bool a = b;
-            return a;
+            bool b = false;
+            if(dgvMostrarClientes.Rows.Count != 0)
+            {
+                b = true;
+            }
+            return b;
         }
     }
 }

@@ -16,6 +16,7 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             InitializeComponent();
             DesactivarPaneles();
+            lblFechayHora.Text = DateTime.Now.ToString();
         }
 
         private void DesactivarPaneles()
@@ -140,7 +141,7 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnMostrarEjemplares_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new frmMostrarEjemplar());
+            AbrirFormularioHijo(new frmListarEjemplares());
 
             //OcultarSubMenu();
         }
@@ -156,12 +157,12 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnReportePrestamos_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new frmMostrarPrestamos());
+            AbrirFormularioHijo(new frmReportePrestamosPorCliente());
         }
 
         private void btnReporteEjemplaresPorLibro_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new frmSeleccionEjemplar());
+            AbrirFormularioHijo(new frmMostrarEjemplar());
         }
 
         #endregion
