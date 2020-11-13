@@ -157,7 +157,7 @@ namespace CAI_BibliotecaTP.Formualarios
 
         private void btnReportePrestamos_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHijo(new frmReportePrestamosPorCliente());
+            AbrirFormularioHijo(new frmEleccionClienteReportePrestamos());
         }
 
         private void btnReporteEjemplaresPorLibro_Click(object sender, EventArgs e)

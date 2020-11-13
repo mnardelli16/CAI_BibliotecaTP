@@ -44,6 +44,21 @@ namespace CAI_BibliotecaTP.Negocio
             return aux;
         }
 
+        public List<Prestamo> TrearPretamosPorIDCliente(int id)
+        {
+            List<Prestamo> aux = new List<Prestamo>();
+
+            foreach (Prestamo P in _lstPrestamo)
+            {
+                if (id == P.IdCliente)
+                {
+                    aux.Add(P);
+                }
+            }
+
+            return aux;
+        }
+
         public int InsertarPrestamo(Prestamo P)
         {
             List<Prestamo> prestamos = _mapper.TraerPrestamos();

@@ -33,6 +33,21 @@ namespace CAI_BibliotecaTP.Negocio
         {
             return _lstClientes.Find(z => z.Dni == dni);
         }
+        public List<Cliente> TraerNombreClientePorID(int id)
+        {
+            List<Cliente> aux = new List<Cliente>();
+
+            foreach(Cliente B in _lstClientes)
+            {
+                if(B.Id == id)
+                {
+                    aux.Add(B);
+                }
+            }
+
+            return aux;
+
+        }
 
         public int InsertarCliente(Cliente cli)
         {

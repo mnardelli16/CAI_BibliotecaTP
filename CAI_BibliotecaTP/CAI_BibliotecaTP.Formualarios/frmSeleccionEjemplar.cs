@@ -29,8 +29,8 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             List<Ejemplar> ejemplar = _ejemplarServicio.TraerEjemplares();
 
-            dgvMostrarEjemplares.Columns.Add("id", "ID EJEMPLAR");    // FALTA ALGREGAR EL NOMBRE DEL LIBRO
-            dgvMostrarEjemplares.Columns.Add("idLibro", "LIBRO");    // FALTA ALGREGAR EL NOMBRE DEL LIBRO
+            dgvMostrarEjemplares.Columns.Add("id", "ID EJEMPLAR");   
+            dgvMostrarEjemplares.Columns.Add("idLibro", "LIBRO");    
             dgvMostrarEjemplares.Columns.Add("observaciones", "OBSERVACIONES");
             dgvMostrarEjemplares.Columns.Add("precio", "PRECIO");
             dgvMostrarEjemplares.Columns.Add("fechaalta", "FECHA ALTA");
