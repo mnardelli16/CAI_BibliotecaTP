@@ -37,6 +37,14 @@ namespace CAI_BibliotecaTP.Formualarios
             this.reportViewer1.RefreshReport();
         }
 
+        private void ClienteBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
 
+        }
+
+        private void PrestamoBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

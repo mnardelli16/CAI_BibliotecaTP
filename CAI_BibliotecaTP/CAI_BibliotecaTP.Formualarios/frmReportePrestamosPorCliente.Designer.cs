@@ -33,8 +33,8 @@ namespace CAI_BibliotecaTP.Formualarios
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.PrestamoBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ClienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             ((System.ComponentModel.ISupportInitialize)(this.PrestamoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ClienteBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -42,6 +42,13 @@ namespace CAI_BibliotecaTP.Formualarios
             // PrestamoBindingSource
             // 
             this.PrestamoBindingSource.DataSource = typeof(CAI_BibliotecaTP.Entidades.Entidades.Prestamo);
+            this.PrestamoBindingSource.CurrentChanged += new System.EventHandler(this.PrestamoBindingSource_CurrentChanged);
+            // 
+            // ClienteBindingSource
+            // 
+            this.ClienteBindingSource.AllowNew = false;
+            this.ClienteBindingSource.DataSource = typeof(CAI_BibliotecaTP.Entidades.Cliente);
+            this.ClienteBindingSource.CurrentChanged += new System.EventHandler(this.ClienteBindingSource_CurrentChanged);
             // 
             // reportViewer1
             // 
@@ -58,11 +65,6 @@ namespace CAI_BibliotecaTP.Formualarios
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(744, 468);
             this.reportViewer1.TabIndex = 0;
-            // 
-            // ClienteBindingSource
-            // 
-            this.ClienteBindingSource.AllowNew = false;
-            this.ClienteBindingSource.DataSource = typeof(CAI_BibliotecaTP.Entidades.Cliente);
             // 
             // frmReportePrestamosPorCliente
             // 

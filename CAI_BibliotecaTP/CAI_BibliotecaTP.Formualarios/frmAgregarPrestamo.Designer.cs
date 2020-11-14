@@ -61,14 +61,14 @@
             this.panel1.Controls.Add(this.lblPlazo);
             this.panel1.Controls.Add(this.lblEjemplar);
             this.panel1.Controls.Add(this.lblCliente);
-            this.panel1.Location = new System.Drawing.Point(72, 3);
+            this.panel1.Location = new System.Drawing.Point(52, 27);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(499, 440);
             this.panel1.TabIndex = 0;
             // 
             // btnEjemplar
             // 
-            this.btnEjemplar.Location = new System.Drawing.Point(438, 91);
+            this.btnEjemplar.Location = new System.Drawing.Point(415, 123);
             this.btnEjemplar.Name = "btnEjemplar";
             this.btnEjemplar.Size = new System.Drawing.Size(23, 22);
             this.btnEjemplar.TabIndex = 20;
@@ -79,7 +79,7 @@
             // txtEjemplar
             // 
             this.txtEjemplar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEjemplar.Location = new System.Drawing.Point(291, 91);
+            this.txtEjemplar.Location = new System.Drawing.Point(268, 123);
             this.txtEjemplar.Name = "txtEjemplar";
             this.txtEjemplar.Size = new System.Drawing.Size(141, 22);
             this.txtEjemplar.TabIndex = 19;
@@ -139,7 +139,7 @@
             this.dateFechaDevTentativa.Enabled = false;
             this.dateFechaDevTentativa.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateFechaDevTentativa.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFechaDevTentativa.Location = new System.Drawing.Point(291, 228);
+            this.dateFechaDevTentativa.Location = new System.Drawing.Point(268, 271);
             this.dateFechaDevTentativa.Name = "dateFechaDevTentativa";
             this.dateFechaDevTentativa.Size = new System.Drawing.Size(141, 22);
             this.dateFechaDevTentativa.TabIndex = 15;
@@ -148,7 +148,7 @@
             // 
             this.dateFechaAlta.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateFechaAlta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateFechaAlta.Location = new System.Drawing.Point(291, 180);
+            this.dateFechaAlta.Location = new System.Drawing.Point(268, 217);
             this.dateFechaAlta.Name = "dateFechaAlta";
             this.dateFechaAlta.Size = new System.Drawing.Size(141, 22);
             this.dateFechaAlta.TabIndex = 14;
@@ -158,7 +158,7 @@
             // 
             this.cbxCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxCliente.FormattingEnabled = true;
-            this.cbxCliente.Location = new System.Drawing.Point(291, 51);
+            this.cbxCliente.Location = new System.Drawing.Point(268, 80);
             this.cbxCliente.Name = "cbxCliente";
             this.cbxCliente.Size = new System.Drawing.Size(141, 25);
             this.cbxCliente.TabIndex = 12;
@@ -166,7 +166,7 @@
             // numPlazo
             // 
             this.numPlazo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numPlazo.Location = new System.Drawing.Point(291, 135);
+            this.numPlazo.Location = new System.Drawing.Point(268, 172);
             this.numPlazo.Name = "numPlazo";
             this.numPlazo.Size = new System.Drawing.Size(141, 22);
             this.numPlazo.TabIndex = 11;
@@ -175,55 +175,55 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(53, 228);
+            this.label1.Location = new System.Drawing.Point(53, 277);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 16);
+            this.label1.Size = new System.Drawing.Size(151, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "FECHA DEV TENTATIVA";
             // 
             // lblFechaPrestamo
             // 
             this.lblFechaPrestamo.AutoSize = true;
-            this.lblFechaPrestamo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaPrestamo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaPrestamo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblFechaPrestamo.Location = new System.Drawing.Point(53, 180);
+            this.lblFechaPrestamo.Location = new System.Drawing.Point(53, 222);
             this.lblFechaPrestamo.Name = "lblFechaPrestamo";
-            this.lblFechaPrestamo.Size = new System.Drawing.Size(78, 16);
+            this.lblFechaPrestamo.Size = new System.Drawing.Size(86, 16);
             this.lblFechaPrestamo.TabIndex = 4;
             this.lblFechaPrestamo.Text = "FECHA ALTA";
             // 
             // lblPlazo
             // 
             this.lblPlazo.AutoSize = true;
-            this.lblPlazo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlazo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlazo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPlazo.Location = new System.Drawing.Point(53, 135);
+            this.lblPlazo.Location = new System.Drawing.Point(53, 174);
             this.lblPlazo.Name = "lblPlazo";
-            this.lblPlazo.Size = new System.Drawing.Size(45, 16);
+            this.lblPlazo.Size = new System.Drawing.Size(49, 16);
             this.lblPlazo.TabIndex = 3;
             this.lblPlazo.Text = "PLAZO";
             // 
             // lblEjemplar
             // 
             this.lblEjemplar.AutoSize = true;
-            this.lblEjemplar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEjemplar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEjemplar.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEjemplar.Location = new System.Drawing.Point(53, 91);
+            this.lblEjemplar.Location = new System.Drawing.Point(53, 129);
             this.lblEjemplar.Name = "lblEjemplar";
-            this.lblEjemplar.Size = new System.Drawing.Size(65, 16);
+            this.lblEjemplar.Size = new System.Drawing.Size(71, 16);
             this.lblEjemplar.TabIndex = 2;
             this.lblEjemplar.Text = "EJEMPLAR";
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCliente.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblCliente.Location = new System.Drawing.Point(53, 51);
+            this.lblCliente.Location = new System.Drawing.Point(53, 83);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(135, 16);
+            this.lblCliente.Size = new System.Drawing.Size(148, 16);
             this.lblCliente.TabIndex = 1;
             this.lblCliente.Text = "CLIENTE (solo activos)";
             // 

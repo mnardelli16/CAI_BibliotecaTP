@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.panelAgregarLibro = new System.Windows.Forms.Panel();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblAutor = new System.Windows.Forms.Label();
-            this.lblEditorial = new System.Windows.Forms.Label();
-            this.lblEdicion = new System.Windows.Forms.Label();
-            this.lblTema = new System.Windows.Forms.Label();
-            this.lblPaginas = new System.Windows.Forms.Label();
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.txtAutor = new System.Windows.Forms.TextBox();
-            this.txtEditorial = new System.Windows.Forms.TextBox();
-            this.txtEdicion = new System.Windows.Forms.TextBox();
-            this.txtTema = new System.Windows.Forms.TextBox();
-            this.txtPaginas = new System.Windows.Forms.TextBox();
-            this.btnAgregarLibro = new FontAwesome.Sharp.IconButton();
             this.btnVolver = new FontAwesome.Sharp.IconButton();
+            this.btnAgregarLibro = new FontAwesome.Sharp.IconButton();
+            this.txtPaginas = new System.Windows.Forms.TextBox();
+            this.txtTema = new System.Windows.Forms.TextBox();
+            this.txtEdicion = new System.Windows.Forms.TextBox();
+            this.txtEditorial = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.lblPaginas = new System.Windows.Forms.Label();
+            this.lblTema = new System.Windows.Forms.Label();
+            this.lblEdicion = new System.Windows.Forms.Label();
+            this.lblEditorial = new System.Windows.Forms.Label();
+            this.lblAutor = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.panelAgregarLibro.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,142 +64,10 @@
             this.panelAgregarLibro.Controls.Add(this.lblEditorial);
             this.panelAgregarLibro.Controls.Add(this.lblAutor);
             this.panelAgregarLibro.Controls.Add(this.lblTitulo);
-            this.panelAgregarLibro.Location = new System.Drawing.Point(101, 12);
+            this.panelAgregarLibro.Location = new System.Drawing.Point(78, 29);
             this.panelAgregarLibro.Name = "panelAgregarLibro";
             this.panelAgregarLibro.Size = new System.Drawing.Size(413, 388);
             this.panelAgregarLibro.TabIndex = 0;
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTitulo.Location = new System.Drawing.Point(30, 41);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(47, 16);
-            this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "TITULO";
-            // 
-            // lblAutor
-            // 
-            this.lblAutor.AutoSize = true;
-            this.lblAutor.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAutor.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAutor.Location = new System.Drawing.Point(30, 86);
-            this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(48, 16);
-            this.lblAutor.TabIndex = 2;
-            this.lblAutor.Text = "AUTOR";
-            // 
-            // lblEditorial
-            // 
-            this.lblEditorial.AutoSize = true;
-            this.lblEditorial.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEditorial.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEditorial.Location = new System.Drawing.Point(30, 132);
-            this.lblEditorial.Name = "lblEditorial";
-            this.lblEditorial.Size = new System.Drawing.Size(67, 16);
-            this.lblEditorial.TabIndex = 3;
-            this.lblEditorial.Text = "EDITORIAL";
-            // 
-            // lblEdicion
-            // 
-            this.lblEdicion.AutoSize = true;
-            this.lblEdicion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEdicion.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblEdicion.Location = new System.Drawing.Point(30, 182);
-            this.lblEdicion.Name = "lblEdicion";
-            this.lblEdicion.Size = new System.Drawing.Size(58, 16);
-            this.lblEdicion.TabIndex = 4;
-            this.lblEdicion.Text = "EDICION";
-            // 
-            // lblTema
-            // 
-            this.lblTema.AutoSize = true;
-            this.lblTema.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTema.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblTema.Location = new System.Drawing.Point(30, 229);
-            this.lblTema.Name = "lblTema";
-            this.lblTema.Size = new System.Drawing.Size(40, 16);
-            this.lblTema.TabIndex = 5;
-            this.lblTema.Text = "TEMA";
-            // 
-            // lblPaginas
-            // 
-            this.lblPaginas.AutoSize = true;
-            this.lblPaginas.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPaginas.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblPaginas.Location = new System.Drawing.Point(30, 277);
-            this.lblPaginas.Name = "lblPaginas";
-            this.lblPaginas.Size = new System.Drawing.Size(62, 16);
-            this.lblPaginas.TabIndex = 6;
-            this.lblPaginas.Text = "PAGINAS";
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.Location = new System.Drawing.Point(226, 41);
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(141, 20);
-            this.txtTitulo.TabIndex = 9;
-            // 
-            // txtAutor
-            // 
-            this.txtAutor.Location = new System.Drawing.Point(226, 86);
-            this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(141, 20);
-            this.txtAutor.TabIndex = 10;
-            // 
-            // txtEditorial
-            // 
-            this.txtEditorial.Location = new System.Drawing.Point(226, 132);
-            this.txtEditorial.Name = "txtEditorial";
-            this.txtEditorial.Size = new System.Drawing.Size(141, 20);
-            this.txtEditorial.TabIndex = 11;
-            // 
-            // txtEdicion
-            // 
-            this.txtEdicion.Location = new System.Drawing.Point(226, 182);
-            this.txtEdicion.Name = "txtEdicion";
-            this.txtEdicion.Size = new System.Drawing.Size(141, 20);
-            this.txtEdicion.TabIndex = 12;
-            // 
-            // txtTema
-            // 
-            this.txtTema.Location = new System.Drawing.Point(226, 229);
-            this.txtTema.Name = "txtTema";
-            this.txtTema.Size = new System.Drawing.Size(141, 20);
-            this.txtTema.TabIndex = 13;
-            // 
-            // txtPaginas
-            // 
-            this.txtPaginas.Location = new System.Drawing.Point(226, 277);
-            this.txtPaginas.Name = "txtPaginas";
-            this.txtPaginas.Size = new System.Drawing.Size(141, 20);
-            this.txtPaginas.TabIndex = 14;
-            // 
-            // btnAgregarLibro
-            // 
-            this.btnAgregarLibro.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAgregarLibro.FlatAppearance.BorderSize = 0;
-            this.btnAgregarLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarLibro.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnAgregarLibro.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarLibro.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarLibro.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
-            this.btnAgregarLibro.IconColor = System.Drawing.Color.White;
-            this.btnAgregarLibro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarLibro.IconSize = 40;
-            this.btnAgregarLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarLibro.Location = new System.Drawing.Point(237, 333);
-            this.btnAgregarLibro.Name = "btnAgregarLibro";
-            this.btnAgregarLibro.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.btnAgregarLibro.Rotation = 0D;
-            this.btnAgregarLibro.Size = new System.Drawing.Size(130, 40);
-            this.btnAgregarLibro.TabIndex = 2;
-            this.btnAgregarLibro.Text = "Agregar";
-            this.btnAgregarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAgregarLibro.UseVisualStyleBackColor = true;
-            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
             // 
             // btnVolver
             // 
@@ -225,6 +93,138 @@
             this.btnVolver.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
+            // 
+            // btnAgregarLibro
+            // 
+            this.btnAgregarLibro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarLibro.FlatAppearance.BorderSize = 0;
+            this.btnAgregarLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregarLibro.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnAgregarLibro.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarLibro.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarLibro.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
+            this.btnAgregarLibro.IconColor = System.Drawing.Color.White;
+            this.btnAgregarLibro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarLibro.IconSize = 40;
+            this.btnAgregarLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregarLibro.Location = new System.Drawing.Point(237, 333);
+            this.btnAgregarLibro.Name = "btnAgregarLibro";
+            this.btnAgregarLibro.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnAgregarLibro.Rotation = 0D;
+            this.btnAgregarLibro.Size = new System.Drawing.Size(130, 40);
+            this.btnAgregarLibro.TabIndex = 2;
+            this.btnAgregarLibro.Text = "Agregar";
+            this.btnAgregarLibro.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAgregarLibro.UseVisualStyleBackColor = true;
+            this.btnAgregarLibro.Click += new System.EventHandler(this.btnAgregarLibro_Click);
+            // 
+            // txtPaginas
+            // 
+            this.txtPaginas.Location = new System.Drawing.Point(189, 277);
+            this.txtPaginas.Name = "txtPaginas";
+            this.txtPaginas.Size = new System.Drawing.Size(178, 20);
+            this.txtPaginas.TabIndex = 14;
+            // 
+            // txtTema
+            // 
+            this.txtTema.Location = new System.Drawing.Point(189, 229);
+            this.txtTema.Name = "txtTema";
+            this.txtTema.Size = new System.Drawing.Size(178, 20);
+            this.txtTema.TabIndex = 13;
+            // 
+            // txtEdicion
+            // 
+            this.txtEdicion.Location = new System.Drawing.Point(189, 182);
+            this.txtEdicion.Name = "txtEdicion";
+            this.txtEdicion.Size = new System.Drawing.Size(178, 20);
+            this.txtEdicion.TabIndex = 12;
+            // 
+            // txtEditorial
+            // 
+            this.txtEditorial.Location = new System.Drawing.Point(189, 132);
+            this.txtEditorial.Name = "txtEditorial";
+            this.txtEditorial.Size = new System.Drawing.Size(178, 20);
+            this.txtEditorial.TabIndex = 11;
+            // 
+            // txtAutor
+            // 
+            this.txtAutor.Location = new System.Drawing.Point(189, 86);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(178, 20);
+            this.txtAutor.TabIndex = 10;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.Location = new System.Drawing.Point(189, 41);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(178, 20);
+            this.txtTitulo.TabIndex = 9;
+            // 
+            // lblPaginas
+            // 
+            this.lblPaginas.AutoSize = true;
+            this.lblPaginas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaginas.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblPaginas.Location = new System.Drawing.Point(30, 277);
+            this.lblPaginas.Name = "lblPaginas";
+            this.lblPaginas.Size = new System.Drawing.Size(67, 16);
+            this.lblPaginas.TabIndex = 6;
+            this.lblPaginas.Text = "PAGINAS";
+            // 
+            // lblTema
+            // 
+            this.lblTema.AutoSize = true;
+            this.lblTema.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTema.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTema.Location = new System.Drawing.Point(30, 229);
+            this.lblTema.Name = "lblTema";
+            this.lblTema.Size = new System.Drawing.Size(43, 16);
+            this.lblTema.TabIndex = 5;
+            this.lblTema.Text = "TEMA";
+            // 
+            // lblEdicion
+            // 
+            this.lblEdicion.AutoSize = true;
+            this.lblEdicion.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdicion.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEdicion.Location = new System.Drawing.Point(30, 182);
+            this.lblEdicion.Name = "lblEdicion";
+            this.lblEdicion.Size = new System.Drawing.Size(63, 16);
+            this.lblEdicion.TabIndex = 4;
+            this.lblEdicion.Text = "EDICION";
+            // 
+            // lblEditorial
+            // 
+            this.lblEditorial.AutoSize = true;
+            this.lblEditorial.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditorial.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblEditorial.Location = new System.Drawing.Point(30, 132);
+            this.lblEditorial.Name = "lblEditorial";
+            this.lblEditorial.Size = new System.Drawing.Size(73, 16);
+            this.lblEditorial.TabIndex = 3;
+            this.lblEditorial.Text = "EDITORIAL";
+            // 
+            // lblAutor
+            // 
+            this.lblAutor.AutoSize = true;
+            this.lblAutor.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutor.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAutor.Location = new System.Drawing.Point(30, 86);
+            this.lblAutor.Name = "lblAutor";
+            this.lblAutor.Size = new System.Drawing.Size(51, 16);
+            this.lblAutor.TabIndex = 2;
+            this.lblAutor.Text = "AUTOR";
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblTitulo.Location = new System.Drawing.Point(30, 41);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(49, 16);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "TITULO";
             // 
             // FrmAgregarLibros
             // 
