@@ -1,5 +1,6 @@
 ﻿using CAI_BibliotecaTP.Entidades;
 using CAI_BibliotecaTP.Entidades.Entidades;
+using CAI_BibliotecaTP.Negocio.Exceptions;
 using CAI_BibliotecaTP.Negocio;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,7 @@ namespace CAI_BibliotecaTP.Formualarios
             _ejemplarServicio = new EjemplarServicio();
             _clienteServicio = new ClienteServicio();
             CargarClientes();
+            numPlazo.Value = 1;
         }
 
         private void btnVolver_Click(object sender, EventArgs e)
@@ -82,14 +84,14 @@ namespace CAI_BibliotecaTP.Formualarios
                     msj += Validaciones.ValidarNumero(_STRejemplar, "Ejemplar", ref _ejemplar);
                     msj += Validaciones.ValidarPlazo(_STRplazo, "Plazo", ref _plazo);
 
-                    if (fechaalta > DateTime.Now)
-                    {
-                        msj += "La fecha de alta no puede ser mayor a HOY";
-                    }
-
                     if (!string.IsNullOrWhiteSpace(msj))
                     {
                         MessageBox.Show(msj, "ERRORES");
+                    }
+                    else if (fechaalta > DateTime.Now)
+                    {
+                        throw new FechaFuturaException();
+                        //msj += "La fecha de alta no puede ser mayor a HOY";
                     }
                     else
                     {
@@ -102,6 +104,10 @@ namespace CAI_BibliotecaTP.Formualarios
                     }
 
                 }
+            }
+            catch(FechaFuturaException ee)
+            {
+                MessageBox.Show(ee.Message, "Mensaje del Sistema");
             }
             catch(Exception ex)
             {

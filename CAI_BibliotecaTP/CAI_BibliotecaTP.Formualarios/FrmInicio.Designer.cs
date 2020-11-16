@@ -37,11 +37,11 @@
             this.panelClientes = new System.Windows.Forms.Panel();
             this.panelLogo = new System.Windows.Forms.Panel();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblFechayHora = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnGithub = new FontAwesome.Sharp.IconButton();
             this.btnMail = new FontAwesome.Sharp.IconButton();
             this.btnFace = new FontAwesome.Sharp.IconButton();
@@ -55,6 +55,7 @@
             this.btnMostrarLibro = new FontAwesome.Sharp.IconButton();
             this.btnAgregarLibro = new FontAwesome.Sharp.IconButton();
             this.btnLibros = new FontAwesome.Sharp.IconButton();
+            this.btnModificarPrestamo = new FontAwesome.Sharp.IconButton();
             this.bntMostrarPrestamos = new FontAwesome.Sharp.IconButton();
             this.btnAgregarPrestamo = new FontAwesome.Sharp.IconButton();
             this.btnPrestamos = new FontAwesome.Sharp.IconButton();
@@ -62,6 +63,7 @@
             this.btnAgregarClientes = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblIP = new System.Windows.Forms.Label();
             this.panelMenu.SuspendLayout();
             this.panelReportes.SuspendLayout();
             this.panelEjemplares.SuspendLayout();
@@ -101,7 +103,7 @@
             this.panelReportes.Controls.Add(this.btnReporteEjemplaresPorLibro);
             this.panelReportes.Controls.Add(this.btnReportePrestamos);
             this.panelReportes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelReportes.Location = new System.Drawing.Point(0, 743);
+            this.panelReportes.Location = new System.Drawing.Point(0, 781);
             this.panelReportes.Name = "panelReportes";
             this.panelReportes.Size = new System.Drawing.Size(223, 88);
             this.panelReportes.TabIndex = 11;
@@ -111,7 +113,7 @@
             this.panelEjemplares.Controls.Add(this.btnMostrarEjemplares);
             this.panelEjemplares.Controls.Add(this.btnAgregarEjemplares);
             this.panelEjemplares.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEjemplares.Location = new System.Drawing.Point(0, 605);
+            this.panelEjemplares.Location = new System.Drawing.Point(0, 643);
             this.panelEjemplares.Name = "panelEjemplares";
             this.panelEjemplares.Size = new System.Drawing.Size(223, 88);
             this.panelEjemplares.TabIndex = 9;
@@ -121,19 +123,20 @@
             this.panelLibros.Controls.Add(this.btnMostrarLibro);
             this.panelLibros.Controls.Add(this.btnAgregarLibro);
             this.panelLibros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLibros.Location = new System.Drawing.Point(0, 467);
+            this.panelLibros.Location = new System.Drawing.Point(0, 505);
             this.panelLibros.Name = "panelLibros";
             this.panelLibros.Size = new System.Drawing.Size(223, 88);
             this.panelLibros.TabIndex = 7;
             // 
             // panelPrestamos
             // 
+            this.panelPrestamos.Controls.Add(this.btnModificarPrestamo);
             this.panelPrestamos.Controls.Add(this.bntMostrarPrestamos);
             this.panelPrestamos.Controls.Add(this.btnAgregarPrestamo);
             this.panelPrestamos.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPrestamos.Location = new System.Drawing.Point(0, 329);
             this.panelPrestamos.Name = "panelPrestamos";
-            this.panelPrestamos.Size = new System.Drawing.Size(223, 88);
+            this.panelPrestamos.Size = new System.Drawing.Size(223, 126);
             this.panelPrestamos.TabIndex = 5;
             // 
             // panelClientes
@@ -158,6 +161,7 @@
             // panelContenedor
             // 
             this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelContenedor.Controls.Add(this.lblIP);
             this.panelContenedor.Controls.Add(this.btnGithub);
             this.panelContenedor.Controls.Add(this.panel1);
             this.panelContenedor.Controls.Add(this.lblFechayHora);
@@ -171,6 +175,16 @@
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(808, 617);
             this.panelContenedor.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(112, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 59);
+            this.panel1.TabIndex = 8;
             // 
             // label1
             // 
@@ -187,6 +201,7 @@
             // 
             // lblFechayHora
             // 
+            this.lblFechayHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFechayHora.AutoSize = true;
             this.lblFechayHora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechayHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -198,17 +213,19 @@
             // 
             // lblUsuario
             // 
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblUsuario.Location = new System.Drawing.Point(6, 555);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(68, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(83, 16);
             this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Text = "USUARIO:";
+            this.lblUsuario.Text = "USUARIO IP:";
             // 
             // lblFecha
             // 
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -218,17 +235,10 @@
             this.lblFecha.TabIndex = 5;
             this.lblFecha.Text = "FECHA SISTEMA:";
             // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(112, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 59);
-            this.panel1.TabIndex = 8;
-            // 
             // btnGithub
             // 
+            this.btnGithub.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGithub.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGithub.FlatAppearance.BorderSize = 0;
             this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGithub.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -252,6 +262,8 @@
             // 
             // btnMail
             // 
+            this.btnMail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMail.FlatAppearance.BorderSize = 0;
             this.btnMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -271,9 +283,12 @@
             this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnMail.UseVisualStyleBackColor = true;
+            this.btnMail.Click += new System.EventHandler(this.btnMail_Click);
             // 
             // btnFace
             // 
+            this.btnFace.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFace.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFace.FlatAppearance.BorderSize = 0;
             this.btnFace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFace.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
@@ -293,13 +308,17 @@
             this.btnFace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFace.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFace.UseVisualStyleBackColor = true;
+            this.btnFace.Click += new System.EventHandler(this.btnFace_Click);
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::CAI_BibliotecaTP.Formualarios.Properties.Resources.Jebediah_Sprinfield_mini;
             this.pictureBox2.Location = new System.Drawing.Point(126, 81);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(504, 498);
+            this.pictureBox2.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -364,7 +383,7 @@
             this.btnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnReportes.IconSize = 45;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(0, 693);
+            this.btnReportes.Location = new System.Drawing.Point(0, 731);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnReportes.Rotation = 0D;
@@ -436,7 +455,7 @@
             this.btnEjemplares.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEjemplares.IconSize = 45;
             this.btnEjemplares.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEjemplares.Location = new System.Drawing.Point(0, 555);
+            this.btnEjemplares.Location = new System.Drawing.Point(0, 593);
             this.btnEjemplares.Name = "btnEjemplares";
             this.btnEjemplares.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnEjemplares.Rotation = 0D;
@@ -508,7 +527,7 @@
             this.btnLibros.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLibros.IconSize = 45;
             this.btnLibros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLibros.Location = new System.Drawing.Point(0, 417);
+            this.btnLibros.Location = new System.Drawing.Point(0, 455);
             this.btnLibros.Name = "btnLibros";
             this.btnLibros.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnLibros.Rotation = 0D;
@@ -519,6 +538,30 @@
             this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLibros.UseVisualStyleBackColor = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
+            // 
+            // btnModificarPrestamo
+            // 
+            this.btnModificarPrestamo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModificarPrestamo.FlatAppearance.BorderSize = 0;
+            this.btnModificarPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModificarPrestamo.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnModificarPrestamo.ForeColor = System.Drawing.Color.White;
+            this.btnModificarPrestamo.IconChar = FontAwesome.Sharp.IconChar.MinusCircle;
+            this.btnModificarPrestamo.IconColor = System.Drawing.Color.White;
+            this.btnModificarPrestamo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnModificarPrestamo.IconSize = 40;
+            this.btnModificarPrestamo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarPrestamo.Location = new System.Drawing.Point(0, 80);
+            this.btnModificarPrestamo.Name = "btnModificarPrestamo";
+            this.btnModificarPrestamo.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
+            this.btnModificarPrestamo.Rotation = 0D;
+            this.btnModificarPrestamo.Size = new System.Drawing.Size(223, 40);
+            this.btnModificarPrestamo.TabIndex = 3;
+            this.btnModificarPrestamo.Text = "Modificar Prestamo";
+            this.btnModificarPrestamo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificarPrestamo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnModificarPrestamo.UseVisualStyleBackColor = true;
+            this.btnModificarPrestamo.Click += new System.EventHandler(this.btnModificarPrestamo_Click);
             // 
             // bntMostrarPrestamos
             // 
@@ -676,6 +719,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblIP
+            // 
+            this.lblIP.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblIP.AutoSize = true;
+            this.lblIP.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblIP.Location = new System.Drawing.Point(86, 555);
+            this.lblIP.Name = "lblIP";
+            this.lblIP.Size = new System.Drawing.Size(20, 16);
+            this.lblIP.TabIndex = 10;
+            this.lblIP.Text = "...";
+            // 
             // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -687,7 +742,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MinimumSize = new System.Drawing.Size(940, 540);
+            this.MinimumSize = new System.Drawing.Size(1024, 636);
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BIBLIOTECA GRAL. JEREMIAS SPRINGFIELD";
@@ -742,5 +797,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private FontAwesome.Sharp.IconButton btnGithub;
         private System.Windows.Forms.Panel panel1;
+        private FontAwesome.Sharp.IconButton btnModificarPrestamo;
+        private System.Windows.Forms.Label lblIP;
     }
 }

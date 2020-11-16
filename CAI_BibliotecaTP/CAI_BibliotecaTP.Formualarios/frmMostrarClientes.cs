@@ -50,7 +50,7 @@ namespace CAI_BibliotecaTP.Formualarios
                 dgvMostrarClientes.Columns.Add("fechaalta", "F. Alta");
                 dgvMostrarClientes.Columns.Add("activo", "Activo");
 
-                foreach (Cliente c in lst)
+                foreach (Cliente c in lst.OrderBy(x => x.Id))
                 {
                     dgvMostrarClientes.Rows.Add(c.Id, c.Dni, c.Nombre, c.Apellido, c.Direccion, c.Email, c.Telefono, c.FechaNacimiento.ToShortDateString(), c.FechaAlta.ToShortDateString(), DeterminarCliente(c.Activo));
                 }

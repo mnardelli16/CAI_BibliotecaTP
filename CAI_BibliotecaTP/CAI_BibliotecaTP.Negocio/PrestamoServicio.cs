@@ -59,6 +59,11 @@ namespace CAI_BibliotecaTP.Negocio
             return aux;
         }
 
+        public Prestamo TrearPretamoPorID(int id)
+        {
+            return _lstPrestamo.Find(x => x.Id == id);
+        }
+
         public int InsertarPrestamo(Prestamo P)
         {
             List<Prestamo> prestamos = _mapper.TraerPrestamos();
@@ -72,6 +77,21 @@ namespace CAI_BibliotecaTP.Negocio
             }
 
             TransactionResult resultado = _mapper.Insert(P);
+
+            if (!resultado.IsOk)
+            {
+                throw new Exception("Hubo un error en la petición al servidor.Detalle: " + resultado.Error);
+            }
+            else
+            {
+                return resultado.Id;
+            }
+        }
+
+        public int ModificarPrestamo(Prestamo P, int id)
+        {
+
+            TransactionResult resultado = _mapper.Modificar(P, id);
 
             if (!resultado.IsOk)
             {

@@ -14,11 +14,35 @@ namespace CAI_BibliotecaTP.Negocio
 
             if (!Int32.TryParse(num, out salida))
             {
-                msj = "El campo " + campo + " debe ingresar un valor numerico" + Environment.NewLine;
+                msj = "El campo " + campo + " debe ser un valor numerico" + Environment.NewLine;
             }
             else if (salida <= 0)
             {
                 msj = "El campo " + campo + " debe ser positivo" + Environment.NewLine;
+            }
+            else
+            {
+                msj = "";
+            }
+            return msj;
+
+        }
+
+        public static string ValidarDNI(string num, string campo, ref int salida)
+        {
+            string msj;
+
+            if (!Int32.TryParse(num, out salida))
+            {
+                msj = "El campo " + campo + " debe ser un valor numerico" + Environment.NewLine;
+            }
+            else if (salida <= 0)
+            {
+                msj = "El campo " + campo + " debe ser positivo" + Environment.NewLine;
+            }
+            else if(salida.ToString().Length > 8)
+            {
+                msj = "El campo " + campo + " no debe ser mayor a 8 digitos" + Environment.NewLine;
             }
             else
             {
@@ -73,6 +97,10 @@ namespace CAI_BibliotecaTP.Negocio
             else if (telefono <= 0)
             {
                 msj = "El campo " + campo + " debe ser positivo" + Environment.NewLine;
+            }
+            else if (telefono.ToString().Length > 10)
+            {
+                msj = "El campo " + campo + " no debe ser mayor a 10 digitos" + Environment.NewLine;
             }
             else
             {

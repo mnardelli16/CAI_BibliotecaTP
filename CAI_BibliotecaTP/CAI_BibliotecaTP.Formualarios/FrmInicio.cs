@@ -8,6 +8,7 @@ using System.Text;
 using System.Configuration;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net;
 
 namespace CAI_BibliotecaTP.Formualarios
 {
@@ -18,6 +19,22 @@ namespace CAI_BibliotecaTP.Formualarios
             InitializeComponent();
             DesactivarPaneles();
             lblFechayHora.Text = DateTime.Now.ToString();
+            lblIP.Text = DetectarIP();
+        }
+
+        private string DetectarIP()
+        {
+            IPHostEntry host;
+            string localIP = "";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString() == "InterNetwork")
+                {
+                    localIP = ip.ToString();
+                }
+            }
+            return localIP;
         }
 
         private void DesactivarPaneles()
@@ -99,6 +116,12 @@ namespace CAI_BibliotecaTP.Formualarios
             AbrirFormularioHijo(new frmMostrarPrestamos());
 
             //OcultarSubMenu();
+        }
+
+        private void btnModificarPrestamo_Click(object sender, EventArgs e)
+        {
+            AbrirFormularioHijo(new frmModificarPrestamo());
+
         }
 
         #endregion
@@ -196,6 +219,19 @@ namespace CAI_BibliotecaTP.Formualarios
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             string spring = ConfigurationManager.AppSettings["Springfield"];
+            System.Diagnostics.Process.Start(spring);
+        }
+
+
+        private void btnFace_Click(object sender, EventArgs e)
+        {
+            string spring = ConfigurationManager.AppSettings["Facebook"];
+            System.Diagnostics.Process.Start(spring);
+        }
+
+        private void btnMail_Click(object sender, EventArgs e)
+        {
+            string spring = ConfigurationManager.AppSettings["Email"];
             System.Diagnostics.Process.Start(spring);
         }
         #endregion

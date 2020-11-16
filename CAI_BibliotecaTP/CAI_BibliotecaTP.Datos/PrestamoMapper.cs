@@ -45,6 +45,22 @@ namespace CAI_BibliotecaTP.Datos
             return obj;
         }
 
+        private NameValueCollection ReverseMapMod(Prestamo P, int id)
+        {
+            NameValueCollection obj = new NameValueCollection();
+
+            obj.Add("idCliente", P.IdCliente.ToString());
+            obj.Add("idEjemplar", P.IdEjemplar.ToString());
+            obj.Add("Plazo", P.Plazo.ToString());
+            obj.Add("Abierto", P.Estado.ToString());
+            obj.Add("FechaPrestamo", P.FechaPrestamo.ToShortDateString());
+            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToShortDateString());
+            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToShortDateString());
+            obj.Add("id", id.ToString());
+
+            return obj;
+        }
+
         private TransactionResult MapResultado(string json)
         {
             TransactionResult obj = JsonConvert.DeserializeObject<TransactionResult>(json);
@@ -56,6 +72,16 @@ namespace CAI_BibliotecaTP.Datos
             NameValueCollection obj = ReverseMap(P);
 
             string ruta = WebHelper.Post("/Biblioteca/Prestamos", obj);
+            TransactionResult resultadoTransc = MapResultado(ruta);
+
+            return resultadoTransc;
+        }
+
+        public TransactionResult Modificar(Prestamo P, int id)
+        {
+            NameValueCollection obj = ReverseMapMod(P, id);
+
+            string ruta = WebHelper.Put("/Biblioteca/Prestamos", obj);
             TransactionResult resultadoTransc = MapResultado(ruta);
 
             return resultadoTransc;

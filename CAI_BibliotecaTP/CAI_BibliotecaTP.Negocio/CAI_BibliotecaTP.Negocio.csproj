@@ -43,7 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteServicio.cs" />
+    <Compile Include="Exceptions\EdadInsuficienteException.cs" />
     <Compile Include="EjemplarServicio.cs" />
+    <Compile Include="Exceptions\FechaFuturaException.cs" />
     <Compile Include="LibroServicio.cs" />
     <Compile Include="PrestamoServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

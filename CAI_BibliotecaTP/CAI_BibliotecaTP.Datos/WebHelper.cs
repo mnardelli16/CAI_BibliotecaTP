@@ -46,7 +46,26 @@ namespace CAI_BibliotecaTP.Datos
             }
             catch (Exception)
             {
-                return "{ \"isOk\":true,\"id\":5,\"error\":null}";
+                return "{ \"isOk\":false,\"id\":-1,\"error\":null}";
+            }
+
+
+        }
+        public static string Put(string url, NameValueCollection parametros)
+        {
+            string uri = _rutabase + url;
+
+            try
+            {
+                var response = _client.UploadValues(uri, "PUT", parametros);
+
+                var responseString = Encoding.Default.GetString(response);
+
+                return responseString;
+            }
+            catch (Exception)
+            {
+                return "{ \"isOk\":false,\"id\":-1,\"error\":null}";
             }
 
 

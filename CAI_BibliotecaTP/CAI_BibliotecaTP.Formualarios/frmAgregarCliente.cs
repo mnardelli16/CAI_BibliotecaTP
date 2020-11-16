@@ -1,5 +1,6 @@
 ﻿using CAI_BibliotecaTP.Entidades;
 using CAI_BibliotecaTP.Negocio;
+using CAI_BibliotecaTP.Negocio.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -52,21 +53,21 @@ namespace CAI_BibliotecaTP.Formualarios
 
                 string msj = "";
 
-                msj += Validaciones.ValidarNumero(_STRdni, "Dni", ref _dni);
+                msj += Validaciones.ValidarDNI(_STRdni, "Dni", ref _dni);
                 msj += Validaciones.ValidarSTRING(_nombre, "Nombre");
                 msj += Validaciones.ValidarSTRING(_apellido, "Apellido");
                 msj += Validaciones.ValidarSTRING(_direccion, "Direccion");
                 msj += Validaciones.ValidarSTRING(_email, "Email");
                 msj += Validaciones.ValidarTelefono(_STRtelefono, "Telefono", ref _telefono);
 
-                if(edad < 18)
-                {
-                    msj += "Debe ser mayor a 18 años";
-                }
-
                 if (!string.IsNullOrWhiteSpace(msj))
                 {
                     MessageBox.Show(msj, "ERRORES");
+                }
+                else if (edad < 18)
+                {
+                    throw new EdadInsuficienteException();
+                    //msj += "Debe ser mayor a 18 años";
                 }
                 else
                 {
@@ -78,6 +79,11 @@ namespace CAI_BibliotecaTP.Formualarios
                     LimpiarBotones();
 
                 }
+            }
+            catch(EdadInsuficienteException ez)
+            {
+                MessageBox.Show(ez.Message, "Mensaje del sistema");
+
             }
             catch (Exception xe)
             {
