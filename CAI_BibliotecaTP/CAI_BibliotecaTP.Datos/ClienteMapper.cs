@@ -48,7 +48,7 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("Direccion", C.Direccion);
             obj.Add("Email", C.Email);
             obj.Add("Telefono", C.Telefono.ToString());
-            obj.Add("FechaNacimiento", C.FechaNacimiento.ToShortDateString());
+            obj.Add("FechaNacimiento", C.FechaNacimiento.ToString("dd-MM-yyyy"));
             obj.Add("Activo", C.Activo.ToString());
             obj.Add("Usuario", ConfigurationManager.AppSettings["Legajo"]);
 

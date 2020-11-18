@@ -33,7 +33,7 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("idLibro", e.IdLibro.ToString());
             obj.Add("Observaciones", e.Observaciones.ToString());
             obj.Add("Precio", e.Precio.ToString());
-            obj.Add("FechaAlta", e.FechaAlta.ToString());
+            obj.Add("FechaAlta", e.FechaAlta.ToString("dd-MM-yyyy"));
             //obj.Add("id", e.Id.ToString());
 
             return obj;

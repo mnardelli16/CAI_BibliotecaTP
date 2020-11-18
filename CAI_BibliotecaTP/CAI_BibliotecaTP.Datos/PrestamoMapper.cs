@@ -37,9 +37,9 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("idEjemplar", P.IdEjemplar.ToString());
             obj.Add("Plazo", P.Plazo.ToString());
             obj.Add("Abierto", P.Estado.ToString());
-            obj.Add("FechaPrestamo", P.FechaPrestamo.ToShortDateString());
-            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToShortDateString());
-            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToShortDateString());
+            obj.Add("FechaPrestamo", P.FechaPrestamo.ToString("dd-MM-yyyy"));
+            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToString("dd-MM-yyyy"));
+            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToString("dd-MM-yyyy"));
             //obj.Add("id", P.Id.ToString());
 
             return obj;
@@ -53,9 +53,9 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("idEjemplar", P.IdEjemplar.ToString());
             obj.Add("Plazo", P.Plazo.ToString());
             obj.Add("Abierto", P.Estado.ToString());
-            obj.Add("FechaPrestamo", P.FechaPrestamo.ToShortDateString());
-            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToShortDateString());
-            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToShortDateString());
+            obj.Add("FechaPrestamo", P.FechaPrestamo.ToString("dd-MM-yyyy"));
+            obj.Add("FechaDevolucionTentativa", P.FechaDevolucionTentativa.ToString("dd-MM-yyyy"));
+            obj.Add("FechaDevolucionReal", P.FechaDevolucionReal.ToString("dd-MM-yyyy"));
             obj.Add("id", id.ToString());
 
             return obj;
