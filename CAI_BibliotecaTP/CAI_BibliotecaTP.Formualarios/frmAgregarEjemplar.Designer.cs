@@ -140,6 +140,7 @@
             // txtPrecio
             // 
             this.txtPrecio.Location = new System.Drawing.Point(231, 197);
+            this.txtPrecio.MaxLength = 6;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.Size = new System.Drawing.Size(166, 20);
             this.txtPrecio.TabIndex = 14;
@@ -158,6 +159,7 @@
             // txtObservaciones
             // 
             this.txtObservaciones.Location = new System.Drawing.Point(231, 144);
+            this.txtObservaciones.MaxLength = 30;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(166, 20);
             this.txtObservaciones.TabIndex = 12;

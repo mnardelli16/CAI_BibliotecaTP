@@ -13,7 +13,6 @@ namespace CAI_BibliotecaTP.Datos
 {
     public class EjemplarMapper
     {
-        //string reg = ConfigurationManager.AppSettings["Legajo"];
         private List<Ejemplar> MapList (string json)
         {
             List<Ejemplar> ejemplares = JsonConvert.DeserializeObject<List<Ejemplar>>(json);
@@ -34,7 +33,6 @@ namespace CAI_BibliotecaTP.Datos
             obj.Add("Observaciones", e.Observaciones.ToString());
             obj.Add("Precio", e.Precio.ToString());
             obj.Add("FechaAlta", e.FechaAlta.ToString("dd-MM-yyyy"));
-            //obj.Add("id", e.Id.ToString());
 
             return obj;
         }

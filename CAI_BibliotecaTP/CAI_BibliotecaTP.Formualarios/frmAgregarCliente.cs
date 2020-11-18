@@ -37,7 +37,6 @@ namespace CAI_BibliotecaTP.Formualarios
                 string _STRfechaNacimiento = datetimePickerNacimiento.Text;
                 bool _activo = false;
 
-                //int edad = Convert.ToInt32(((DateTime.Now - datetimePickerNacimiento.Value).TotalDays / 365));
                 
                 int edad = DateTime.Today.Year - datetimePickerNacimiento.Value.Year;
 
@@ -67,7 +66,6 @@ namespace CAI_BibliotecaTP.Formualarios
                 else if (edad < 18)
                 {
                     throw new EdadInsuficienteException();
-                    //msj += "Debe ser mayor a 18 años";
                 }
                 else
                 {
@@ -76,6 +74,7 @@ namespace CAI_BibliotecaTP.Formualarios
                     int salida = _clienteServicio.InsertarCliente(C);
 
                     MessageBox.Show("Cliente Agregado con exito ID: " + salida, "Mensaje del sistema");
+
                     LimpiarBotones();
 
                 }

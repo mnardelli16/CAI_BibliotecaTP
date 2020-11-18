@@ -80,6 +80,7 @@
             // 
             this.txtEjemplar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEjemplar.Location = new System.Drawing.Point(268, 123);
+            this.txtEjemplar.MaxLength = 5;
             this.txtEjemplar.Name = "txtEjemplar";
             this.txtEjemplar.Size = new System.Drawing.Size(141, 22);
             this.txtEjemplar.TabIndex = 19;
@@ -167,6 +168,11 @@
             // 
             this.numPlazo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPlazo.Location = new System.Drawing.Point(268, 172);
+            this.numPlazo.Maximum = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
             this.numPlazo.Name = "numPlazo";
             this.numPlazo.Size = new System.Drawing.Size(141, 22);
             this.numPlazo.TabIndex = 11;

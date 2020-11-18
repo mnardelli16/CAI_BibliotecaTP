@@ -31,9 +31,9 @@ namespace CAI_BibliotecaTP.Formualarios
         private void CargarPrestamos()
         {
 
-            cbxPrestamos.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbxPrestamos.DropDownStyle = ComboBoxStyle.DropDownList; // indico que no se puede modificar el combobox
 
-            foreach (Prestamo P in _lstPrestamo)
+            foreach (Prestamo P in _lstPrestamo.OrderBy(x => x.Id))
             {
                 if (P.Estado)
                 {
@@ -96,7 +96,8 @@ namespace CAI_BibliotecaTP.Formualarios
                     }
                     else
                     {
-                        Prestamo P2 = new Prestamo(P.IdCliente, P.IdEjemplar, P.Plazo, false, P.FechaPrestamo, P.FechaDevolucionTentativa, fechabaja);
+                        // cuando da la baja del prestamo pasa su estado a cerrado (false)
+                        Prestamo P2 = new Prestamo(P.IdCliente, P.IdEjemplar, P.Plazo, false, P.FechaPrestamo, P.FechaDevolucionTentativa, fechabaja); 
 
                         int id2 = _prestamoServicio.ModificarPrestamo(P2, P.Id);
 

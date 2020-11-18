@@ -86,14 +86,12 @@ namespace CAI_BibliotecaTP.Formualarios
 
             AbrirFormularioHijo(new frmAgregarCliente());
 
-            // OcultarSubMenu();
         }
 
         private void btnMostrarClientes_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(new frmMostrarClientes());
 
-            //OcultarSubMenu();
         }
 
         #endregion
@@ -108,14 +106,12 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             AbrirFormularioHijo(new frmAgregarPrestamo());
 
-            //OcultarSubMenu();
         }
 
         private void bntMostrarPrestamos_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(new frmMostrarPrestamos());
 
-            //OcultarSubMenu();
         }
 
         private void btnModificarPrestamo_Click(object sender, EventArgs e)
@@ -138,14 +134,12 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             AbrirFormularioHijo(new FrmAgregarLibros());
 
-            //OcultarSubMenu();
         }
 
         private void btnMostrarLibro_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(new FrmMostrarLibros());
 
-            //OcultarSubMenu();
         }
 
         #endregion
@@ -160,14 +154,12 @@ namespace CAI_BibliotecaTP.Formualarios
         {
             AbrirFormularioHijo(new frmAgregarEjemplar());
 
-            //OcultarSubMenu();
         }
 
         private void btnMostrarEjemplares_Click(object sender, EventArgs e)
         {
             AbrirFormularioHijo(new frmListarEjemplares());
 
-            //OcultarSubMenu();
         }
         #endregion
 
@@ -222,7 +214,6 @@ namespace CAI_BibliotecaTP.Formualarios
             System.Diagnostics.Process.Start(spring);
         }
 
-
         private void btnFace_Click(object sender, EventArgs e)
         {
             string spring = ConfigurationManager.AppSettings["Facebook"];
@@ -234,8 +225,12 @@ namespace CAI_BibliotecaTP.Formualarios
             string spring = ConfigurationManager.AppSettings["Email"];
             System.Diagnostics.Process.Start(spring);
         }
+
         #endregion
 
-
+        private void FrmInicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -31,39 +31,39 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmInicio));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panelReportes = new System.Windows.Forms.Panel();
-            this.panelEjemplares = new System.Windows.Forms.Panel();
-            this.panelLibros = new System.Windows.Forms.Panel();
-            this.panelPrestamos = new System.Windows.Forms.Panel();
-            this.panelClientes = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblFechayHora = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.btnGithub = new FontAwesome.Sharp.IconButton();
-            this.btnMail = new FontAwesome.Sharp.IconButton();
-            this.btnFace = new FontAwesome.Sharp.IconButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnReporteEjemplaresPorLibro = new FontAwesome.Sharp.IconButton();
             this.btnReportePrestamos = new FontAwesome.Sharp.IconButton();
             this.btnReportes = new FontAwesome.Sharp.IconButton();
+            this.panelEjemplares = new System.Windows.Forms.Panel();
             this.btnMostrarEjemplares = new FontAwesome.Sharp.IconButton();
             this.btnAgregarEjemplares = new FontAwesome.Sharp.IconButton();
             this.btnEjemplares = new FontAwesome.Sharp.IconButton();
+            this.panelLibros = new System.Windows.Forms.Panel();
             this.btnMostrarLibro = new FontAwesome.Sharp.IconButton();
             this.btnAgregarLibro = new FontAwesome.Sharp.IconButton();
             this.btnLibros = new FontAwesome.Sharp.IconButton();
+            this.panelPrestamos = new System.Windows.Forms.Panel();
             this.btnModificarPrestamo = new FontAwesome.Sharp.IconButton();
             this.bntMostrarPrestamos = new FontAwesome.Sharp.IconButton();
             this.btnAgregarPrestamo = new FontAwesome.Sharp.IconButton();
             this.btnPrestamos = new FontAwesome.Sharp.IconButton();
+            this.panelClientes = new System.Windows.Forms.Panel();
             this.btnMostrarClientes = new FontAwesome.Sharp.IconButton();
             this.btnAgregarClientes = new FontAwesome.Sharp.IconButton();
             this.btnClientes = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelContenedor = new System.Windows.Forms.Panel();
             this.lblIP = new System.Windows.Forms.Label();
+            this.btnGithub = new FontAwesome.Sharp.IconButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblFechayHora = new System.Windows.Forms.Label();
+            this.btnMail = new FontAwesome.Sharp.IconButton();
+            this.lblUsuario = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.btnFace = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelMenu.SuspendLayout();
             this.panelReportes.SuspendLayout();
             this.panelEjemplares.SuspendLayout();
@@ -71,10 +71,10 @@
             this.panelPrestamos.SuspendLayout();
             this.panelClientes.SuspendLayout();
             this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelContenedor.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -107,221 +107,6 @@
             this.panelReportes.Name = "panelReportes";
             this.panelReportes.Size = new System.Drawing.Size(223, 88);
             this.panelReportes.TabIndex = 11;
-            // 
-            // panelEjemplares
-            // 
-            this.panelEjemplares.Controls.Add(this.btnMostrarEjemplares);
-            this.panelEjemplares.Controls.Add(this.btnAgregarEjemplares);
-            this.panelEjemplares.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelEjemplares.Location = new System.Drawing.Point(0, 643);
-            this.panelEjemplares.Name = "panelEjemplares";
-            this.panelEjemplares.Size = new System.Drawing.Size(223, 88);
-            this.panelEjemplares.TabIndex = 9;
-            // 
-            // panelLibros
-            // 
-            this.panelLibros.Controls.Add(this.btnMostrarLibro);
-            this.panelLibros.Controls.Add(this.btnAgregarLibro);
-            this.panelLibros.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLibros.Location = new System.Drawing.Point(0, 505);
-            this.panelLibros.Name = "panelLibros";
-            this.panelLibros.Size = new System.Drawing.Size(223, 88);
-            this.panelLibros.TabIndex = 7;
-            // 
-            // panelPrestamos
-            // 
-            this.panelPrestamos.Controls.Add(this.btnModificarPrestamo);
-            this.panelPrestamos.Controls.Add(this.bntMostrarPrestamos);
-            this.panelPrestamos.Controls.Add(this.btnAgregarPrestamo);
-            this.panelPrestamos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelPrestamos.Location = new System.Drawing.Point(0, 329);
-            this.panelPrestamos.Name = "panelPrestamos";
-            this.panelPrestamos.Size = new System.Drawing.Size(223, 126);
-            this.panelPrestamos.TabIndex = 5;
-            // 
-            // panelClientes
-            // 
-            this.panelClientes.Controls.Add(this.btnMostrarClientes);
-            this.panelClientes.Controls.Add(this.btnAgregarClientes);
-            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelClientes.Location = new System.Drawing.Point(0, 191);
-            this.panelClientes.Name = "panelClientes";
-            this.panelClientes.Size = new System.Drawing.Size(223, 88);
-            this.panelClientes.TabIndex = 1;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(223, 141);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panelContenedor.Controls.Add(this.lblIP);
-            this.panelContenedor.Controls.Add(this.btnGithub);
-            this.panelContenedor.Controls.Add(this.panel1);
-            this.panelContenedor.Controls.Add(this.lblFechayHora);
-            this.panelContenedor.Controls.Add(this.btnMail);
-            this.panelContenedor.Controls.Add(this.lblUsuario);
-            this.panelContenedor.Controls.Add(this.lblFecha);
-            this.panelContenedor.Controls.Add(this.btnFace);
-            this.panelContenedor.Controls.Add(this.pictureBox2);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(240, 0);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(808, 617);
-            this.panelContenedor.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(112, 16);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(586, 59);
-            this.panel1.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.75F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(9, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(570, 34);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "BIBLIOTECA GRAL. JEREMIAS SPRINGFIELD";
-            // 
-            // lblFechayHora
-            // 
-            this.lblFechayHora.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblFechayHora.AutoSize = true;
-            this.lblFechayHora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechayHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFechayHora.Location = new System.Drawing.Point(112, 589);
-            this.lblFechayHora.Name = "lblFechayHora";
-            this.lblFechayHora.Size = new System.Drawing.Size(20, 16);
-            this.lblFechayHora.TabIndex = 6;
-            this.lblFechayHora.Text = "...";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblUsuario.Location = new System.Drawing.Point(6, 555);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(83, 16);
-            this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Text = "USUARIO IP:";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblFecha.Location = new System.Drawing.Point(6, 589);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(111, 16);
-            this.lblFecha.TabIndex = 5;
-            this.lblFecha.Text = "FECHA SISTEMA:";
-            // 
-            // btnGithub
-            // 
-            this.btnGithub.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGithub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnGithub.FlatAppearance.BorderSize = 0;
-            this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGithub.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnGithub.ForeColor = System.Drawing.Color.White;
-            this.btnGithub.IconChar = FontAwesome.Sharp.IconChar.Github;
-            this.btnGithub.IconColor = System.Drawing.Color.White;
-            this.btnGithub.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnGithub.IconSize = 45;
-            this.btnGithub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGithub.Location = new System.Drawing.Point(630, 462);
-            this.btnGithub.Name = "btnGithub";
-            this.btnGithub.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnGithub.Rotation = 0D;
-            this.btnGithub.Size = new System.Drawing.Size(144, 50);
-            this.btnGithub.TabIndex = 9;
-            this.btnGithub.Text = "GITHUB";
-            this.btnGithub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGithub.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGithub.UseVisualStyleBackColor = true;
-            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
-            // 
-            // btnMail
-            // 
-            this.btnMail.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMail.FlatAppearance.BorderSize = 0;
-            this.btnMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnMail.ForeColor = System.Drawing.Color.White;
-            this.btnMail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
-            this.btnMail.IconColor = System.Drawing.Color.White;
-            this.btnMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMail.IconSize = 45;
-            this.btnMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMail.Location = new System.Drawing.Point(630, 508);
-            this.btnMail.Name = "btnMail";
-            this.btnMail.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMail.Rotation = 0D;
-            this.btnMail.Size = new System.Drawing.Size(144, 50);
-            this.btnMail.TabIndex = 2;
-            this.btnMail.Text = "MAIL";
-            this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMail.UseVisualStyleBackColor = true;
-            this.btnMail.Click += new System.EventHandler(this.btnMail_Click);
-            // 
-            // btnFace
-            // 
-            this.btnFace.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnFace.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFace.FlatAppearance.BorderSize = 0;
-            this.btnFace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFace.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnFace.ForeColor = System.Drawing.Color.White;
-            this.btnFace.IconChar = FontAwesome.Sharp.IconChar.Facebook;
-            this.btnFace.IconColor = System.Drawing.Color.White;
-            this.btnFace.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFace.IconSize = 45;
-            this.btnFace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFace.Location = new System.Drawing.Point(630, 555);
-            this.btnFace.Name = "btnFace";
-            this.btnFace.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnFace.Rotation = 0D;
-            this.btnFace.Size = new System.Drawing.Size(147, 50);
-            this.btnFace.TabIndex = 3;
-            this.btnFace.Text = "FACEBOOK";
-            this.btnFace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFace.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnFace.UseVisualStyleBackColor = true;
-            this.btnFace.Click += new System.EventHandler(this.btnFace_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::CAI_BibliotecaTP.Formualarios.Properties.Resources.Jebediah_Sprinfield_mini;
-            this.pictureBox2.Location = new System.Drawing.Point(126, 81);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 500);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnReporteEjemplaresPorLibro
             // 
@@ -395,6 +180,16 @@
             this.btnReportes.UseVisualStyleBackColor = true;
             this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
+            // panelEjemplares
+            // 
+            this.panelEjemplares.Controls.Add(this.btnMostrarEjemplares);
+            this.panelEjemplares.Controls.Add(this.btnAgregarEjemplares);
+            this.panelEjemplares.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelEjemplares.Location = new System.Drawing.Point(0, 643);
+            this.panelEjemplares.Name = "panelEjemplares";
+            this.panelEjemplares.Size = new System.Drawing.Size(223, 88);
+            this.panelEjemplares.TabIndex = 9;
+            // 
             // btnMostrarEjemplares
             // 
             this.btnMostrarEjemplares.Dock = System.Windows.Forms.DockStyle.Top;
@@ -467,6 +262,16 @@
             this.btnEjemplares.UseVisualStyleBackColor = true;
             this.btnEjemplares.Click += new System.EventHandler(this.btnEjemplares_Click);
             // 
+            // panelLibros
+            // 
+            this.panelLibros.Controls.Add(this.btnMostrarLibro);
+            this.panelLibros.Controls.Add(this.btnAgregarLibro);
+            this.panelLibros.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLibros.Location = new System.Drawing.Point(0, 505);
+            this.panelLibros.Name = "panelLibros";
+            this.panelLibros.Size = new System.Drawing.Size(223, 88);
+            this.panelLibros.TabIndex = 7;
+            // 
             // btnMostrarLibro
             // 
             this.btnMostrarLibro.Dock = System.Windows.Forms.DockStyle.Top;
@@ -538,6 +343,17 @@
             this.btnLibros.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLibros.UseVisualStyleBackColor = true;
             this.btnLibros.Click += new System.EventHandler(this.btnLibros_Click);
+            // 
+            // panelPrestamos
+            // 
+            this.panelPrestamos.Controls.Add(this.btnModificarPrestamo);
+            this.panelPrestamos.Controls.Add(this.bntMostrarPrestamos);
+            this.panelPrestamos.Controls.Add(this.btnAgregarPrestamo);
+            this.panelPrestamos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelPrestamos.Location = new System.Drawing.Point(0, 329);
+            this.panelPrestamos.Name = "panelPrestamos";
+            this.panelPrestamos.Size = new System.Drawing.Size(223, 126);
+            this.panelPrestamos.TabIndex = 5;
             // 
             // btnModificarPrestamo
             // 
@@ -635,6 +451,16 @@
             this.btnPrestamos.UseVisualStyleBackColor = true;
             this.btnPrestamos.Click += new System.EventHandler(this.btnPrestamos_Click);
             // 
+            // panelClientes
+            // 
+            this.panelClientes.Controls.Add(this.btnMostrarClientes);
+            this.panelClientes.Controls.Add(this.btnAgregarClientes);
+            this.panelClientes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelClientes.Location = new System.Drawing.Point(0, 191);
+            this.panelClientes.Name = "panelClientes";
+            this.panelClientes.Size = new System.Drawing.Size(223, 88);
+            this.panelClientes.TabIndex = 1;
+            // 
             // btnMostrarClientes
             // 
             this.btnMostrarClientes.Dock = System.Windows.Forms.DockStyle.Top;
@@ -707,6 +533,15 @@
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(223, 141);
+            this.panelLogo.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -719,6 +554,24 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // panelContenedor
+            // 
+            this.panelContenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelContenedor.Controls.Add(this.lblIP);
+            this.panelContenedor.Controls.Add(this.btnGithub);
+            this.panelContenedor.Controls.Add(this.panel1);
+            this.panelContenedor.Controls.Add(this.lblFechayHora);
+            this.panelContenedor.Controls.Add(this.btnMail);
+            this.panelContenedor.Controls.Add(this.lblUsuario);
+            this.panelContenedor.Controls.Add(this.lblFecha);
+            this.panelContenedor.Controls.Add(this.btnFace);
+            this.panelContenedor.Controls.Add(this.pictureBox2);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(240, 0);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(808, 617);
+            this.panelContenedor.TabIndex = 2;
+            // 
             // lblIP
             // 
             this.lblIP.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -730,6 +583,153 @@
             this.lblIP.Size = new System.Drawing.Size(20, 16);
             this.lblIP.TabIndex = 10;
             this.lblIP.Text = "...";
+            // 
+            // btnGithub
+            // 
+            this.btnGithub.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGithub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGithub.FlatAppearance.BorderSize = 0;
+            this.btnGithub.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGithub.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnGithub.ForeColor = System.Drawing.Color.White;
+            this.btnGithub.IconChar = FontAwesome.Sharp.IconChar.Github;
+            this.btnGithub.IconColor = System.Drawing.Color.White;
+            this.btnGithub.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnGithub.IconSize = 45;
+            this.btnGithub.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGithub.Location = new System.Drawing.Point(630, 462);
+            this.btnGithub.Name = "btnGithub";
+            this.btnGithub.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnGithub.Rotation = 0D;
+            this.btnGithub.Size = new System.Drawing.Size(144, 50);
+            this.btnGithub.TabIndex = 9;
+            this.btnGithub.Text = "GITHUB";
+            this.btnGithub.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGithub.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGithub.UseVisualStyleBackColor = true;
+            this.btnGithub.Click += new System.EventHandler(this.btnGithub_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(112, 16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(586, 59);
+            this.panel1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.75F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(6, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(570, 34);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "BIBLIOTECA GRAL. JEREMIAS SPRINGFIELD";
+            // 
+            // lblFechayHora
+            // 
+            this.lblFechayHora.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFechayHora.AutoSize = true;
+            this.lblFechayHora.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechayHora.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFechayHora.Location = new System.Drawing.Point(112, 589);
+            this.lblFechayHora.Name = "lblFechayHora";
+            this.lblFechayHora.Size = new System.Drawing.Size(20, 16);
+            this.lblFechayHora.TabIndex = 6;
+            this.lblFechayHora.Text = "...";
+            // 
+            // btnMail
+            // 
+            this.btnMail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnMail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMail.FlatAppearance.BorderSize = 0;
+            this.btnMail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMail.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnMail.ForeColor = System.Drawing.Color.White;
+            this.btnMail.IconChar = FontAwesome.Sharp.IconChar.Envelope;
+            this.btnMail.IconColor = System.Drawing.Color.White;
+            this.btnMail.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnMail.IconSize = 45;
+            this.btnMail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMail.Location = new System.Drawing.Point(630, 508);
+            this.btnMail.Name = "btnMail";
+            this.btnMail.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnMail.Rotation = 0D;
+            this.btnMail.Size = new System.Drawing.Size(144, 50);
+            this.btnMail.TabIndex = 2;
+            this.btnMail.Text = "MAIL";
+            this.btnMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMail.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMail.UseVisualStyleBackColor = true;
+            this.btnMail.Click += new System.EventHandler(this.btnMail_Click);
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblUsuario.Location = new System.Drawing.Point(6, 555);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(83, 16);
+            this.lblUsuario.TabIndex = 4;
+            this.lblUsuario.Text = "USUARIO IP:";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblFecha.Location = new System.Drawing.Point(6, 589);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(111, 16);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "FECHA SISTEMA:";
+            // 
+            // btnFace
+            // 
+            this.btnFace.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnFace.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFace.FlatAppearance.BorderSize = 0;
+            this.btnFace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFace.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnFace.ForeColor = System.Drawing.Color.White;
+            this.btnFace.IconChar = FontAwesome.Sharp.IconChar.Facebook;
+            this.btnFace.IconColor = System.Drawing.Color.White;
+            this.btnFace.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFace.IconSize = 45;
+            this.btnFace.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFace.Location = new System.Drawing.Point(630, 555);
+            this.btnFace.Name = "btnFace";
+            this.btnFace.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnFace.Rotation = 0D;
+            this.btnFace.Size = new System.Drawing.Size(147, 50);
+            this.btnFace.TabIndex = 3;
+            this.btnFace.Text = "FACEBOOK";
+            this.btnFace.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFace.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnFace.UseVisualStyleBackColor = true;
+            this.btnFace.Click += new System.EventHandler(this.btnFace_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = global::CAI_BibliotecaTP.Formualarios.Properties.Resources.Jebediah_Sprinfield_mini;
+            this.pictureBox2.Location = new System.Drawing.Point(126, 81);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(500, 500);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // FrmInicio
             // 
@@ -746,6 +746,7 @@
             this.Name = "FrmInicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BIBLIOTECA GRAL. JEREMIAS SPRINGFIELD";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmInicio_FormClosed);
             this.panelMenu.ResumeLayout(false);
             this.panelReportes.ResumeLayout(false);
             this.panelEjemplares.ResumeLayout(false);
@@ -753,12 +754,12 @@
             this.panelPrestamos.ResumeLayout(false);
             this.panelClientes.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelContenedor.ResumeLayout(false);
             this.panelContenedor.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

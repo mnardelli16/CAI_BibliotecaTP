@@ -121,6 +121,7 @@
             // txtPaginas
             // 
             this.txtPaginas.Location = new System.Drawing.Point(189, 277);
+            this.txtPaginas.MaxLength = 5;
             this.txtPaginas.Name = "txtPaginas";
             this.txtPaginas.Size = new System.Drawing.Size(178, 20);
             this.txtPaginas.TabIndex = 14;
@@ -128,6 +129,7 @@
             // txtTema
             // 
             this.txtTema.Location = new System.Drawing.Point(189, 229);
+            this.txtTema.MaxLength = 50;
             this.txtTema.Name = "txtTema";
             this.txtTema.Size = new System.Drawing.Size(178, 20);
             this.txtTema.TabIndex = 13;
@@ -135,6 +137,7 @@
             // txtEdicion
             // 
             this.txtEdicion.Location = new System.Drawing.Point(189, 182);
+            this.txtEdicion.MaxLength = 30;
             this.txtEdicion.Name = "txtEdicion";
             this.txtEdicion.Size = new System.Drawing.Size(178, 20);
             this.txtEdicion.TabIndex = 12;
@@ -142,6 +145,7 @@
             // txtEditorial
             // 
             this.txtEditorial.Location = new System.Drawing.Point(189, 132);
+            this.txtEditorial.MaxLength = 30;
             this.txtEditorial.Name = "txtEditorial";
             this.txtEditorial.Size = new System.Drawing.Size(178, 20);
             this.txtEditorial.TabIndex = 11;
@@ -149,6 +153,7 @@
             // txtAutor
             // 
             this.txtAutor.Location = new System.Drawing.Point(189, 86);
+            this.txtAutor.MaxLength = 30;
             this.txtAutor.Name = "txtAutor";
             this.txtAutor.Size = new System.Drawing.Size(178, 20);
             this.txtAutor.TabIndex = 10;
@@ -156,6 +161,7 @@
             // txtTitulo
             // 
             this.txtTitulo.Location = new System.Drawing.Point(189, 41);
+            this.txtTitulo.MaxLength = 30;
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(178, 20);
             this.txtTitulo.TabIndex = 9;

@@ -91,7 +91,6 @@ namespace CAI_BibliotecaTP.Formualarios
                     else if (fechaalta > DateTime.Now)
                     {
                         throw new FechaFuturaException();
-                        //msj += "La fecha de alta no puede ser mayor a HOY";
                     }
                     else
                     {
