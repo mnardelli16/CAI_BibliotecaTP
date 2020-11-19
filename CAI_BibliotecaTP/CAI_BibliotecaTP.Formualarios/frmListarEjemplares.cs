@@ -71,7 +71,7 @@ namespace CAI_BibliotecaTP.Formualarios
             }
             else
             {
-                MessageBox.Show("El listado ya esta actualizado.", "MESAJE DEL SISTEMA");
+                MessageBox.Show("El listado ya esta actualizado.", "Mensaje del sistema");
             }
         }
 
